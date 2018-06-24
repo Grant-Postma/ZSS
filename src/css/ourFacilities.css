@@ -188,7 +188,7 @@ section {
 #info {
 	display: flex;
 	flex-flow: column nowrap;
-	margin: 70px;
+	margin: 20px;
 	text-align: center;
 	color: white;
 	font-size: 18px;
@@ -199,9 +199,9 @@ section {
 }
 
 #directions {
-	width: 420px;
-	height: 40px;
-	font-size: 18px;
+	width: 350px;
+	height: 30px;
+	font-size: 16px;
 	cursor: pointer;
 	color: white;
 	background-color: #71a9ad;
@@ -256,8 +256,8 @@ section {
 }
 
 #review-img {
-	width:250px;
-	height: 250px;
+	width:220px;
+	height: 220px;
 	background-image: url("http://waterfordpanel.com.au/writegooglereview.png");
 	background-size: cover;
  	background-position: center;
@@ -296,6 +296,12 @@ section {
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 950px) {
+	#review-img {
+		display: none;
+	}
+}
+
 @media only screen and (min-width: 1000px) {
     .text-align h1 {
     	margin-top: 100px;
@@ -315,9 +321,13 @@ section {
     }
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1050px) {
 	#flex-words {
 		width: 60%;
+	}
+
+	#info {
+		margin: 70px;
 	}
 
 }

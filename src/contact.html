@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="css/ourFacilities.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
 </head>
 	<body>
 		<div class="head">
@@ -18,23 +18,18 @@
 		
 		<div id="flex-contact">
 			<div id="contact-center">
-			<h1>Let's Talk</h1>
+			<h1>Let's Talk!</h1>
 			<p>To get a jump-start on our conversation, please fill out the questionnaire below. It only takes a few minutes, and will ensure that you’re contacted by just the right person. Please note that all fields are required (unless marked as optional). Thanks, and talk to you soon.</p><br>
 			
  				 <label>First name:</label> <br>
-  				<input class="normalInput" id="firstInput" type="text" name="First"> <br>
-  				<label>Last name:</label> <br>
-  				<input class="normalInput" id="lastInput" type="text" name="Last"> <br>
+  				<input class="normalInput" id="nameInput" type="text" name="yourName"> <br>
   				<label>Phone:</label>  <br>
   				<input class="normalInput" id="phoneInput" type="text" name="Phone"> <br>
   				<label>Email:</label>  <br>
   				<input class="normalInput" id="emailInput" type="text" name="Email"> <br>
-  				<label>Whats the best way to contact you?</label>  <br>
-  				<input type="radio" name="bestPhone"> <br>
-  				<input type="radio" name="bestEmail"> <br>
   				<label>Message:</label>  <br>
-  				<input id="MessageInput" type="text" name="Message"> <br>
-  				<input type="submit" value="Submit">
+  				<textarea class="normalInput" id="MessageInput" type="text" name="Message" cols="40" rows="5"></textarea> <br>
+  				<input id="form-Submit" type="submit" value="Submit">
 			</div>
 		</div>
 
@@ -50,8 +45,8 @@
 				<div id="contact">
 					<div id="first">
 						<input id="directions" type="button" name="directions" value="Get Directions" onclick="location.href='https://www.google.com/maps/dir/Current+Location/zeeland+self+storage/@42.8173751,-86.0463971,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x8819949e3c76f36b:0xb1c80fd576b762e!2m2!1d-86.0112919!2d42.8173805'">
-						<div style='overflow:hidden;height:270px;width:420px;'>
-  						<div id='gmap_canvas' style='height:270px;width:420px;'></div>
+						<div style='overflow:hidden;height:23vh;width:350px;'>
+  						<div id='gmap_canvas' style='height:23vh;width:350px;'></div>
   						</div> <a href='https://www.embed-map.net/'>google maps for my website</a>
   					</div>
   					<span id="info">
