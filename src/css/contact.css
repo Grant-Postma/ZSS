@@ -202,17 +202,22 @@ span a {
  }
 
  #flex-contact {
+ 	display: flex;
+ 	flex-flow: row nowrap;
+ 	justify-content: center;
  	position: relative;
  	width: 100%;
  }
 
  #contact-center {
  	position: relative;
- 	width: 55%;
- 	margin: auto;
  	top:120px;
  }
 
+#find-us {
+	position: relative;
+	top:120px;
+}
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
