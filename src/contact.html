@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/ourFacilities.css">
+</head>
+	<body>
+		<div class="head">
+			<nav id="nav">
+				<a href="index.html"><img id="logo" src="http://zeelandselfstorage.com/communities/6/000/001/787/716//images/10832026_267x111.png" alt="Smiley face" height="60" width="200"></a>
+				<span id="right">
+				<a id="orange" href="ourFacilities.html">Our Facilities</a> 
+				<a id="green" href="">Unit Sizes</a> 
+				<a id="purple" href="">Vehical Storage</a> 
+				<a id="red" href="contact.html">Contact Us</a>
+			</span>
+			</nav>
+		</div>
+		
+		<div id="flex-contact">
+			<div id="contact-center">
+			<h1>Let's Talk</h1>
+			<p>To get a jump-start on our conversation, please fill out the questionnaire below. It only takes a few minutes, and will ensure that you’re contacted by just the right person. Please note that all fields are required (unless marked as optional). Thanks, and talk to you soon.</p><br>
+			
+ 				 <label>First name:</label> <br>
+  				<input class="normalInput" id="firstInput" type="text" name="First"> <br>
+  				<label>Last name:</label> <br>
+  				<input class="normalInput" id="lastInput" type="text" name="Last"> <br>
+  				<label>Phone:</label>  <br>
+  				<input class="normalInput" id="phoneInput" type="text" name="Phone"> <br>
+  				<label>Email:</label>  <br>
+  				<input class="normalInput" id="emailInput" type="text" name="Email"> <br>
+  				<label>Whats the best way to contact you?</label>  <br>
+  				<input type="radio" name="bestPhone"> <br>
+  				<input type="radio" name="bestEmail"> <br>
+  				<label>Message:</label>  <br>
+  				<input id="MessageInput" type="text" name="Message"> <br>
+  				<input type="submit" value="Submit">
+			</div>
+		</div>
+
+
+
+
+
+
+			<div id="bottom">
+				<div id="reviews">
+					<div class="review5" id="changing"></div>
+				</div>
+				<div id="contact">
+					<div id="first">
+						<input id="directions" type="button" name="directions" value="Get Directions" onclick="location.href='https://www.google.com/maps/dir/Current+Location/zeeland+self+storage/@42.8173751,-86.0463971,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x8819949e3c76f36b:0xb1c80fd576b762e!2m2!1d-86.0112919!2d42.8173805'">
+						<div style='overflow:hidden;height:270px;width:420px;'>
+  						<div id='gmap_canvas' style='height:270px;width:420px;'></div>
+  						</div> <a href='https://www.embed-map.net/'>google maps for my website</a>
+  					</div>
+  					<span id="info">
+  						<span>231 N Centennial St, Zeeland, MI 49464</span>
+  						<span>(616) 239-1234</span>
+  						<span>ZeelandSelfStorage@charter.net</span>
+  						<span>Open 24 hours a day, 7 days a week</span>
+  					</span>
+  					
+  					<a onclick="location.href='https://www.google.com/search?q=zeeland+self+storage&oq=zeel&aqs=chrome.0.69i59l2j69i60l3j0.1014j0j9&sourceid=chrome&ie=UTF-8#lrd=0x8819949e3c76f36b:0xb1c80fd576b762e,3,,,'" id="review-img"></a>
+  				
+
+				</div>
+				<div id="footer">
+					<p>@Some copywrite / business stuff</p>
+				</div>
+			</div>
+		</section>
+		
+	<script src="js/reviews.js"></script>
+	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCub4Fqz-Sd0nHrxEfxaxLmNMG-a3OCads'></script>
+	<script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=f5e2f1f92f698a714c0844c1be8839587c0d57a7'></script>
+	<script type='text/javascript'>
+ 		function init_map() {
+       	  var myOptions = {
+       	    zoom: 13,
+       	    center: new google.maps.LatLng(42.817353, -86.01130799999999),
+       	    mapTypeId: google.maps.MapTypeId.ROADMAP
+       	  };
+       	  map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+       	  marker = new google.maps.Marker({
+       	    map: map,
+       	    position: new google.maps.LatLng(42.817353, -86.01130799999999)
+       	  });
+       	  infowindow = new google.maps.InfoWindow({
+       	    content: '<strong>Zeeland Self Storage</strong><br>231 N Centennial St<br>49464 Zeeland<br>'
+       	  });
+       	  google.maps.event.addListener(marker, 'click', function() {
+       	    infowindow.open(map, marker);
+       	  });
+       	  infowindow.open(map, marker);
+       	}
+       	google.maps.event.addDomListener(window, 'load', init_map);
+
+</script>
+</body>
+
+
+</html>

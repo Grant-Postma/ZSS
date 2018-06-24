@@ -71,14 +71,24 @@ section {
 	width: 100%;
 	height: 300px;
 	margin-top: 75px;
-	background-color: #ffaa21;
-	background-image: url(https://i.gyazo.com/3f4940184138736d97aaa5ed91a6c1de.png);
+	background-image: url("../images/yellowParticles.png");
     background-repeat: no-repeat;
     background-size: cover; 
 }
 
 #flex-words {
-	width: 45%;
+	width: 85%;
+	margin-bottom: 50px;
+}
+
+#flex-words h1 {
+	font-size: 45px;
+	margin: 15px;
+	font-weight: normal;
+}
+
+#flex-words p {
+	font-size: 18px;
 }
 
 .box-container {
@@ -151,60 +161,137 @@ section {
 #reviews {
 	position: relative;
 	width: 100%;
-	height: 40%;
-	background-color: #71a9ad;
+	height: 45%;
+	background-image: url("https://i.gyazo.com/c66d5af489cabc486ad0ddac2610b2ba.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+	border: 1px solid #71a9ad;
 }
 
 
 
 #contact {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
 	width: 100%;
-	height: 60%;
-	background-color: white;
+	height: 45%;
+	background-color: #222222;
+	border: 1px solid #555555;
+}
+
+#first {
+	margin-bottom: 20px;
+}
+
+#info {
+	display: flex;
+	flex-flow: column nowrap;
+	margin: 70px;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+}
+
+#info span {
+	margin: 20px;
+}
+
+#directions {
+	width: 420px;
+	height: 40px;
+	font-size: 18px;
+	cursor: pointer;
+	color: white;
+	background-color: #71a9ad;
+	border: none;
 }
 
 
-.review0 {
-	margin: auto;
-	width: 55%;
-	height: 100%;
-	background-color: black;
-}
 .review1 {
 	margin: auto;
 	width: 55%;
 	height: 100%;
-	background-color: green;
+	background-image: url("https://i.gyazo.com/8483bb52245081b7db740ff9fe5002bf.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 .review2 {
 	margin: auto;
 	width: 55%;
 	height: 100%;
-	background-color: blue;
+	background-image: url("https://i.gyazo.com/d59a2787c932dbbb9a162b9c4fe0c858.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 .review3 {
 	margin: auto;
 	width: 55%;
 	height: 100%;
-	background-color: red;
+	background-image: url("../images/transparent1.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 .review4 {
 	margin: auto;
 	width: 55%;
 	height: 100%;
-	background-color: yellow;
+	background-image: url("https://i.gyazo.com/98f1e0028fe6e649fd41e93dfc3ffbf5.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
 .review5 {
 	margin: auto;
 	width: 55%;
 	height: 100%;
-	background-color: brown;
+	background-image: url("../images/transparent1.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+#review-img {
+	width:250px;
+	height: 250px;
+	background-image: url("http://waterfordpanel.com.au/writegooglereview.png");
+	background-size: cover;
+ 	background-position: center;
+ 	overflow: visible;
+ 	cursor: pointer; 
 }
 
  #gmap_canvas img {
       max-width: none !important;
       background: none !important
     }
+
+ #footer {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	color: #b3b3b3;
+ 	width: 100%;
+ 	height: 10%;
+ 	background-color: #333333;
+ 	border: 1px solid #333333;
+ }
+
+ #flex-contact {
+ 	position: relative;
+ 	width: 100%;
+ }
+
+ #contact-center {
+ 	position: relative;
+ 	width: 40%;
+ 	margin: auto;
+ 	top:75px;
+ }
 
 
 
@@ -214,13 +301,23 @@ section {
     	margin-top: 100px;
     	margin-bottom: 10px;
     	font-size: 40px;
+    	color: #333;
     }
     .text-align h3 {
     	margin-top: 0px;
     	font-size: 23px;
+    	color: #666;
     }
     .text-align li {
     	line-height: 50px;
     	font-size: 19px;
+    	color: #666;
     }
+}
+
+@media only screen and (min-width: 1000px) {
+	#flex-words {
+		width: 60%;
+	}
+
 }

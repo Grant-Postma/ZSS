@@ -9,5 +9,5 @@ setInterval(function(){
 	block.classList.remove(`review${number -1}`);
 	
 	if(number >= 5) number = 0;
-}, 3000);
+}, 5000);
 
