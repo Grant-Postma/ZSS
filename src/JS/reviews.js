@@ -19,4 +19,17 @@ function formSubmit(){
 	console.log(`Name: ${newD[0]}. Message: ${newD[3]} Phone Number: ${newD[1]} Email: ${newD[2]}`)
 }
 
+function menu(){
+	var menu = document.querySelector('#menushow');
+	menu.style.height = '90vh';
+	menu.style.width = '95%';
+}
+
+function off(){
+	var menu = document.querySelector('#menushow');
+	menu.style.height = '0px';
+	menu.style.width = '0px';
+}
+
+
 

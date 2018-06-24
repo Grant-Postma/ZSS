@@ -4,10 +4,20 @@
 	<link rel="stylesheet" type="text/css" href="css/contact.css">
 </head>
 	<body>
+		<div id="menushow">
+			<span id="X" onclick="off()">X</span>
+			<div>Home</div>
+			<div>Our Facilities</div>
+			<div>Unit Sizes</div>
+			<div>Vehical Storage</div>
+			<div>Contact Us</div>
+
+		</div>
 		<div class="head">
 			<nav id="nav">
 				<a href="index.html"><img id="logo" src="http://zeelandselfstorage.com/communities/6/000/001/787/716//images/10832026_267x111.png" alt="Smiley face" height="60" width="200"></a>
 				<span id="right">
+					<input type="button" name="menu" value="Menu" onclick="menu()">
 				<a id="orange" href="ourFacilities.html">Our Facilities</a> 
 				<a id="green" href="">Unit Sizes</a> 
 				<a id="purple" href="">Vehical Storage</a> 
@@ -20,7 +30,7 @@
 			<div id="contact-center">
 			<h1>Let's Talk!</h1>
 			<p>To get a jump-start on our conversation, please fill out the questionnaire below. It only takes a few minutes, and will ensure that you’re contacted by just the right person. Please note that all fields are required (unless marked as optional). Thanks, and talk to you soon.</p><br>
-			
+			<form action="mailto:russchky@gmail.com" method="post" enctype="text/plain" >
  				 <label>First name:</label> <br>
   				<input class="normalInput" id="nameInput" type="text" name="yourName"> <br>
   				<label>Phone:</label>  <br>
@@ -29,7 +39,8 @@
   				<input class="normalInput" id="emailInput" type="text" name="Email"> <br>
   				<label>Message:</label>  <br>
   				<textarea class="normalInput" id="MessageInput" type="text" name="Message" cols="40" rows="5"></textarea> <br>
-  				<input id="form-Submit" type="submit" value="Submit" onclick="formSubmit()">
+  				<input id="form-Submit" type="submit" value="Submit" >
+  			</form>
 			</div>
 			<div id="find-us">
 				<h3><u>ZSS</u></h3>
