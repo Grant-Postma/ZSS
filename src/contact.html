@@ -2,6 +2,8 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 	<body>
 		<div id="menushow">
@@ -14,7 +16,7 @@
 
 		</div>
 		<div class="head">
-			<nav id="nav">
+			<nav id="nav" >
 				<a href="index.html"><img id="logo" src="http://zeelandselfstorage.com/communities/6/000/001/787/716//images/10832026_267x111.png" alt="Smiley face" height="60" width="200"></a>
 				<span id="right">
 					<input type="button" name="menu" value="Menu" onclick="menu()">
@@ -28,8 +30,8 @@
 		
 		<div id="flex-contact">
 			<div id="contact-center">
-			<h1>Let's Talk!</h1>
-			<p>To get a jump-start on our conversation, please fill out the questionnaire below. It only takes a few minutes, and will ensure that you’re contacted by just the right person. Please note that all fields are required (unless marked as optional). Thanks, and talk to you soon.</p><br>
+			<h1 id="letsTalk">Let's Talk!</h1>
+			<p id="talkP">To get a jump-start on our conversation, please fill out the questionnaire below. It only takes a few minutes, and will ensure that you’re contacted by just the right person. Please note that all fields are required (unless marked as optional). Thanks, and talk to you soon.</p><br>
 			<form action="mailto:russchky@gmail.com" method="post" enctype="text/plain" >
  				 <label>First name:</label> <br>
   				<input class="normalInput" id="nameInput" type="text" name="yourName"> <br>
@@ -50,7 +52,7 @@
 				<p>e: <u style="color:red">ZeelandSelfStorage@charter.net</u></p>
 			</div>
 		</div>
-
+		
 
 
 

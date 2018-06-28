@@ -32,4 +32,6 @@ function off(){
 }
 
 
-
+setTimeout(function(){
+	$('#talkP, #letsTalk, #find-us, form').css({'opacity': '1','transform': 'translateX(0px)'})
+}, 500);
