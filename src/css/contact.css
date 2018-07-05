@@ -1,6 +1,6 @@
 
 * {
-	font-family: sans-serif;
+	font-family: lato, sans-serif;
 	color: rgb(102, 102, 102);
 }
 
@@ -43,16 +43,16 @@ span a {
 	top: 25px;
 }
 
-#orange:hover {
+.orange:hover {
 	color: #ffaa21;
 }
-#green:hover {
+.green:hover {
 	color: #74ab85;
 }
-#purple:hover {
+.purple:hover {
 	color: #8466c2;
 }
-#red:hover {
+.red:hover {
 	color: #db332f;
 }
 
@@ -61,6 +61,14 @@ span a {
 	margin-bottom: 25px;
 	font-weight: normal;
 	font-size: 40px;
+	opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 500ms, transform 1000ms;
+}
+
+.transitionClass {
+	opacity: 1;
+    transform: translateY(0px);
 }
 
 #contact-center p {
@@ -68,6 +76,14 @@ span a {
     line-height: 35px;
     font-size: 20px;
     width: 690px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 500ms, transform 1300ms;
+}
+form {
+	opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 600ms, transform 1000ms;
 }
 
 .normalInput {
@@ -218,6 +234,9 @@ span a {
 #find-us {
 	position: relative;
 	top:120px;
+	opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 600ms, transform 1000ms;
 }
 
 #right input {
@@ -247,15 +266,13 @@ span a {
     box-shadow: 0 0 15px gray;
 }
 
-#menushow div {
-	flex: 1 auto;
+#menushow a div {
+	padding: 5vh;
 	font-size: 20px;
-	margin-left: 10px;
-	cursor: pointer;
 	text-align: center;
-	padding-top: 12%;
 	-webkit-box-shadow: 0 0 15px gray;
     box-shadow: 0px 15px 10px -15px #111;
+    text-decoration: none !important;
 }
 
 #X {
@@ -312,14 +329,29 @@ span a {
 }
 @media only screen and (max-width: 1050px) {
 	.normalInput {
-		width: 500px;
+		width: 100%;
 	}
+
 	#contact-center p {
-		width:500px;
+		width: 100%;
 	}
+
+	#messageInput {
+		width: 97%;
+	}
+
+	#form-Submit {
+		width: 103%;
+	}
+
+	form {
+		padding-right: 10px;
+	}
+
 	#find-us {
 		margin-left:20px;
 		margin-top: 45px;
+		margin-right: 20px;
 	}
 }
 @media only screen and (min-width: 1050px) {
@@ -328,4 +360,11 @@ span a {
 		margin: 70px;
 	}
 
+}
+
+@media only screen and (max-width: 1050px) {
+	#contact-center {
+		margin: 25px;
+		margin-top: -40px;
+	}
 }
