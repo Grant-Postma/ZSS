@@ -1,5 +1,5 @@
 
-let number = 0;
+/*let number = 0;
 
 setInterval(function(){
 	number++
@@ -10,6 +10,8 @@ setInterval(function(){
 	
 	if(number >= 5) number = 0;
 }, 5000);
+
+*/
 
 
 function formSubmit(){
@@ -33,5 +35,10 @@ function off(){
 
 
 setTimeout(function(){
-	$('#talkP, #letsTalk, #find-us, form').css({'opacity': '1','transform': 'translateX(0px)'})
-}, 500);
+	$('#talkP, #letsTalk, #flex-words p').css({'opacity': '1','transform': 'translateX(0px)'})
+}, 100);
+
+setTimeout(function(){
+	$(' #find-us, form, .text-align').css({'opacity': '1','transform': 'translateX(0px)'})
+}, 300);
+

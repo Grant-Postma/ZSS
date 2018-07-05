@@ -4,15 +4,16 @@
 	<link rel="stylesheet" type="text/css" href="css/contact.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 </head>
 	<body>
 		<div id="menushow">
 			<span id="X" onclick="off()">X</span>
 			<a style="text-decoration: none;"href="index.html"><div class="red">Home</div></a>
-			<a style="text-decoration: none;"href=""><div class="orange">Our Facilities</div></a>
-			<a style="text-decoration: none;"href=""><div class="green">Unit Sizes</div></a>
-			<a style="text-decoration: none;"href=""><div class="purple">Vehical Storage</div></a>
-			<a style="text-decoration: none;"href=""><div class="red">Contact Us</div></a>
+			<a style="text-decoration: none;"href="ourFacilities.html"><div class="orange">Our Facilities</div></a>
+			<a style="text-decoration: none;"href="unitSize.html"><div class="green">Unit Sizes</div></a>
+			<a style="text-decoration: none;"href="vehicalStorage.html"><div class="purple">Vehical Storage</div></a>
+			<a style="text-decoration: none;"href="contact.html"><div class="red">Contact Us</div></a>
 
 		</div>
 		<div class="head">
@@ -21,8 +22,8 @@
 				<span id="right">
 					<input type="button" name="menu" value="Menu" onclick="menu()">
 				<a class="orange" href="ourFacilities.html">Our Facilities</a> 
-				<a class="green"  href="">Unit Sizes</a> 
-				<a class="purple" href="">Vehical Storage</a> 
+				<a class="green"  href="unitSize.html">Unit Sizes</a> 
+				<a class="purple" href="vehicalStorage.html">Vehical Storage</a> 
 				<a class="red"    href="contact.html">Contact Us</a>
 			</span>
 			</nav>
@@ -31,7 +32,7 @@
 		<div id="flex-contact">
 			<div id="contact-center">
 			<h1 id="letsTalk">Let's Talk!</h1>
-			<p id="talkP">To get a jump-start on our conversation, please fill out the questionnaire below. It only takes a few minutes, and will ensure that you’re contacted by just the right person. Please note that all fields are required (unless marked as optional). Thanks, and talk to you soon.</p><br>
+			<p id="talkP">To get a jump-start on our conversation, please fill out the questionnaire below. It only takes a few minutes, and will ensure that you’re contacted by just the right person. Thanks, and talk to you soon.</p><br>
 			<form action="mailto:russchky@gmail.com" method="post" enctype="text/plain" >
  				 <label>First name:</label> <br>
   				<input class="normalInput" id="nameInput" type="text" name="yourName"> <br>
@@ -63,12 +64,7 @@
 					<div class="review5" id="changing"></div>
 				</div>
 				<div id="contact">
-					<div id="first">
-						<input id="directions" type="button" name="directions" value="Get Directions" onclick="location.href='https://www.google.com/maps/dir/Current+Location/zeeland+self+storage/@42.8173751,-86.0463971,13z/data=!3m1!4b1!4m8!4m7!1m0!1m5!1m1!1s0x8819949e3c76f36b:0xb1c80fd576b762e!2m2!1d-86.0112919!2d42.8173805'">
-						<div style='overflow:hidden;height:23vh;width:350px;'>
-  						<div id='gmap_canvas' style='height:23vh;width:350px;'></div>
-  						</div> <a href='https://www.embed-map.net/'>google maps for my website</a>
-  					</div>
+					
   					<span id="info">
   						<span>231 N Centennial St, Zeeland, MI 49464</span>
   						<span>(616) 239-1234</span>
@@ -87,31 +83,7 @@
 		</section>
 		
 	<script src="js/reviews.js"></script>
-	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCub4Fqz-Sd0nHrxEfxaxLmNMG-a3OCads'></script>
-	<script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=f5e2f1f92f698a714c0844c1be8839587c0d57a7'></script>
-	<script type='text/javascript'>
- 		function init_map() {
-       	  var myOptions = {
-       	    zoom: 13,
-       	    center: new google.maps.LatLng(42.817353, -86.01130799999999),
-       	    mapTypeId: google.maps.MapTypeId.ROADMAP
-       	  };
-       	  map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-       	  marker = new google.maps.Marker({
-       	    map: map,
-       	    position: new google.maps.LatLng(42.817353, -86.01130799999999)
-       	  });
-       	  infowindow = new google.maps.InfoWindow({
-       	    content: '<strong>Zeeland Self Storage</strong><br>231 N Centennial St<br>49464 Zeeland<br>'
-       	  });
-       	  google.maps.event.addListener(marker, 'click', function() {
-       	    infowindow.open(map, marker);
-       	  });
-       	  infowindow.open(map, marker);
-       	}
-       	google.maps.event.addDomListener(window, 'load', init_map);
-
-</script>
+	
 </body>
 
 

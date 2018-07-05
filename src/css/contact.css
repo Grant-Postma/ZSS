@@ -1,6 +1,6 @@
 
 * {
-	font-family: sans-serif;
+	font-family: lato, sans-serif;
 	color: rgb(102, 102, 102);
 }
 
@@ -329,14 +329,29 @@ form {
 }
 @media only screen and (max-width: 1050px) {
 	.normalInput {
-		width: 500px;
+		width: 100%;
 	}
+
 	#contact-center p {
-		width:500px;
+		width: 100%;
 	}
+
+	#messageInput {
+		width: 97%;
+	}
+
+	#form-Submit {
+		width: 103%;
+	}
+
+	form {
+		padding-right: 10px;
+	}
+
 	#find-us {
 		margin-left:20px;
 		margin-top: 45px;
+		margin-right: 20px;
 	}
 }
 @media only screen and (min-width: 1050px) {
@@ -345,4 +360,11 @@ form {
 		margin: 70px;
 	}
 
+}
+
+@media only screen and (max-width: 1050px) {
+	#contact-center {
+		margin: 25px;
+		margin-top: -40px;
+	}
 }
