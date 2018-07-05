@@ -1,0 +1,304 @@
+
+* {
+	font-family: sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+.head {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background-color: rgba(255,255,255, .94);
+	height: 75px;
+	z-index: 98;
+}
+
+#nav {
+	margin: auto;
+	width: 55%;
+	min-width: 1000px;
+	z-index: 99;
+}
+
+#logo {
+	padding: 10px;
+
+}
+
+#right {
+	float: right;
+}
+
+span a {
+	padding: 20px;
+	text-decoration: none;
+	color: gray;
+	padding: 22px;
+	font-size: 20px;
+	position: relative;
+	top: 25px;
+}
+
+#orange:hover {
+	color: #ffaa21;
+}
+#green:hover {
+	color: #74ab85;
+}
+#purple:hover {
+	color: #8466c2;
+}
+#red:hover {
+	color: #db332f;
+}
+
+
+section {
+	height: 200vh;
+	width: 99.84%;
+}
+
+.summary {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	text-align: center;
+	width: 100%;
+	height: 300px;
+	margin-top: 75px;
+	background-color: #ffaa21;
+	background-image: url("../Images/red-background.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#flex-words {
+	width: 45%;
+	margin-bottom: 50px;
+}
+
+#flex-words h1 {
+	font-size: 50px;
+	font-weight: 400;
+}
+
+#flex-words h2 {
+	font-size: 25px;
+	font-weight: 200;
+	margin-top: -15px;
+}
+
+#flex-words a {
+	font-size: 20px;
+	font-weight: 200;
+	margin-top: -15px;
+	text-decoration: underline;
+	color: white;
+}
+
+#flex-words a:hover {
+    text-decoration: none;
+}
+
+.box-container {
+	height: 30%;
+	width: 100%;
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.box {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	border-bottom: 5px solid red;
+}
+
+
+ .more-info {
+	 width: 80%;
+	 margin-top: -50px; 
+ }
+
+ .more-info h1 {
+	font-size: 45px;
+	font-weight: 300;
+	color: #333333;	
+}
+
+.information {
+	width: 80%;
+	margin-top: 100px;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.info {
+	width: 25%;
+	height: 300px;
+	margin-top: -100px;
+	display: flex;
+	flex-flow: column nowrap;
+	margin-right: 20px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.info img {
+	margin-top: -50px;
+
+}
+
+.info h1 {
+	font-size: 30px;
+	font-weight: 400;
+	color: #333333;
+	margin-top: -50px;
+	
+}
+
+.info a {
+	text-decoration: none;
+}
+
+
+
+.info p {
+	font-size: 20px;
+	font-weight: 400;
+	color: #666666;
+	margin-top: -10px;
+}
+
+
+
+ #one {
+ 	background-image: url("../images/security.jpg");
+ 	background-size: cover;
+ 	background-position: center;
+ }
+ #two {
+ 	background-image: url("../images/convienence.jpg");
+ 	background-size: cover;
+ 	background-position: center;
+ }
+ #three {
+ 	background-image: url("../images/focus2.png");
+ 	background-size: cover;
+ 	background-position: center;
+ }
+
+
+ .corner-left {
+ 	position: absolute;
+ 	bottom: 0px;
+ 	right: 0px;
+ 	z-index: -1
+ }
+
+ .corner {
+ 	position: absolute;
+ 	bottom: 0px;
+ 	left: 0px;
+ 	z-index: -1;
+ }
+
+ /* reviews + contact for each page  */
+
+
+#bottom {
+	width: 100%;
+	height: 92vh;
+}
+
+#reviews {
+	position: relative;
+	width: 100%;
+	height: 40%;
+	background-color: #71a9ad;
+}
+
+
+
+#contact {
+	width: 100%;
+	height: 60%;
+	background-color: white;
+}
+
+
+.review0 {
+	margin: auto;
+	width: 55%;
+	height: 100%;
+	background-color: black;
+}
+.review1 {
+	margin: auto;
+	width: 55%;
+	height: 100%;
+	background-color: green;
+}
+.review2 {
+	margin: auto;
+	width: 55%;
+	height: 100%;
+	background-color: blue;
+}
+.review3 {
+	margin: auto;
+	width: 55%;
+	height: 100%;
+	background-color: red;
+}
+.review4 {
+	margin: auto;
+	width: 55%;
+	height: 100%;
+	background-color: yellow;
+}
+.review5 {
+	margin: auto;
+	width: 55%;
+	height: 100%;
+	background-color: brown;
+}
+
+ #gmap_canvas img {
+      max-width: none !important;
+      background: none !important
+    }
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1000px) {
+    .text-align h1 {
+    	margin-top: 100px;
+    	margin-bottom: 10px;
+    	font-size: 40px;
+    }
+    .text-align h3 {
+    	margin-top: 0px;
+    	font-size: 23px;
+    }
+    .text-align li {
+    	line-height: 50px;
+    	font-size: 19px;
+    }
+}
