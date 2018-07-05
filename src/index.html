@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 	<body>
 		<div class="head">
@@ -55,40 +56,12 @@
 				<div id="reviews">
 					<div id="changing"></div>
 				</div>
-				<div id="contact">
-					<div style='overflow:hidden;height:400px;width:520px;'>
-  					<div id='gmap_canvas' style='height:400px;width:520px;'></div>
-  					</div> <a href='https://www.embed-map.net/'>google maps for my website</a>
-				</div>
+				
 			</div>
 		</section>
 		
 	<script src="js/reviews.js"></script>
-	<script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCub4Fqz-Sd0nHrxEfxaxLmNMG-a3OCads'></script>
-	<script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=f5e2f1f92f698a714c0844c1be8839587c0d57a7'></script>
-	<script type='text/javascript'>
- 		function init_map() {
-       	  var myOptions = {
-       	    zoom: 13,
-       	    center: new google.maps.LatLng(42.817353, -86.01130799999999),
-       	    mapTypeId: google.maps.MapTypeId.ROADMAP
-       	  };
-       	  map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
-       	  marker = new google.maps.Marker({
-       	    map: map,
-       	    position: new google.maps.LatLng(42.817353, -86.01130799999999)
-       	  });
-       	  infowindow = new google.maps.InfoWindow({
-       	    content: '<strong>Zeeland Self Storage</strong><br>231 N Centennial St<br>49464 Zeeland<br>'
-       	  });
-       	  google.maps.event.addListener(marker, 'click', function() {
-       	    infowindow.open(map, marker);
-       	  });
-       	  infowindow.open(map, marker);
-       	}
-       	google.maps.event.addDomListener(window, 'load', init_map);
 
-</script>
 </body>
 
 
