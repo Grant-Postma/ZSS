@@ -44,12 +44,15 @@ setTimeout(function(){
 
 
 function changeStuff(event){
+	var pageWidth = $(window).width();
 	console.log(event.path[0].id)
 	$(".sizeBody").removeClass("active");
 	$('#sizeHead div').removeClass("on");
 	$(`#n${event.path[0].id}`).addClass("active");
-	$(`#${event.path[0].id}`).addClass("on")
-
+	$(`#${event.path[0].id}`).addClass("on");
+	if (pageWidth < 768) {
+	$('#sizeHead').css('display', 'none')
+}
 }
 
 
@@ -57,6 +60,6 @@ const headNames = document.querySelectorAll('#sizeHead div');
 headNames.forEach(name => name.addEventListener('click', changeStuff));
 
 function expand(){
-	
+	$('#sizeHead').toggle();
 }
 
