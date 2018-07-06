@@ -42,3 +42,17 @@ setTimeout(function(){
 	$(' #find-us, form, .text-align').css({'opacity': '1','transform': 'translateX(0px)'})
 }, 300);
 
+
+function changeStuff(event){
+	console.log(event.path[0].id)
+	$(".sizeBody").removeClass("active");
+	$(`#n${event.path[0].id}`).addClass("active");
+
+}
+
+
+const headNames = document.querySelectorAll('#sizeHead div');
+headNames.forEach(name => name.addEventListener('click', changeStuff));
+
+
+
