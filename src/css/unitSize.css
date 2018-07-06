@@ -59,7 +59,6 @@ span a {
 
 
 section {
-	min-height: 1000px;
 	width: 99.84%;
 }
 
@@ -560,9 +559,7 @@ section {
 	.box-container {
 		flex-flow: column nowrap;
 	}
-	.section {
-		height: 350vh;
-	}
+	
 	.box1 {
 		height: 30%;
 	}
@@ -672,6 +669,7 @@ section {
 		position: absolute;
  		width: 95%;
  		z-index: 100;
+ 		border: none;
 	}
 	.mobileButton {
 		display: inline-block;
