@@ -2,6 +2,7 @@
 * {
 	font-family: Lato,sans-serif;
 
+
 }
 
 body {
@@ -94,6 +95,14 @@ section {
 	z-index: -200;
 }
 
+#color {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 60%;
+	border-radius: 12px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);;
+}
+
 
 #flex-words p {
 	color: #fff;
@@ -118,8 +127,9 @@ section {
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: flex-start;
-	width: 60%;
-    background-color: #f2f2f2;
+    background-color: #4C895F;
+    border-top-left-radius: 12px 12px;
+    border-top-right-radius: 12px 12px;
 }
 
 #sizeHead div {
@@ -128,12 +138,13 @@ section {
 	padding-top: 15px;
     padding-bottom: 15px;
     cursor: pointer;
+    font-weight: bold;
  
 }
 
 #sizeHead div:hover {
-	background-color: #333;
-	color: white;
+	color: #333;
+
 }
 
 .sizeWords {
@@ -155,17 +166,24 @@ section {
 	
 }
 
+.on {
+	background-color: #f2f2f2;
+	font-weight: 900;
+	border-top-left-radius: 10px 10px;
+    border-top-right-radius: 10px 10px;
+}
+
 
 .sizeBody {
 	display: none;
 	flex-flow: row nowrap;
 	justify-content: center;
 	align-items: center;
-	width: 60%;
-	border-radius: 10px;
 	background: #f2f2f2;
 	padding-top: 70px;
     padding-bottom: 70px;
+    border-bottom-left-radius: 12px 12px;
+    border-bottom-right-radius: 12px 12px;
 }
 
  .text-align {
@@ -287,7 +305,7 @@ section {
 	border-radius: 5px;
 	position: absolute;
 	top: 15px;
-	right: 15px;
+	right: 25px;
 	z-index: 101;
 }
 
@@ -392,6 +410,16 @@ section {
  	cursor: pointer; 
 }
 
+.mobileButton {
+	display: none;
+	width: 100%;
+	border-top-right-radius: 12px;
+	border-top-left-radius: 12px;
+	background-color: #4C895F;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
 #review-flex {
 	display: flex;
 	flex-flow: column nowrap;
@@ -435,6 +463,16 @@ section {
  	width: 40%;
  	margin: auto;
  	top:75px;
+ }
+
+ .dropdown-content a {
+ 	display: none;
+ }
+
+ .dropbtn {
+ 	width: 100%;
+ 	font-size: 18px;
+    font-weight: bold;
  }
 
 
@@ -592,4 +630,37 @@ section {
 		font-size: 24px;
 	}
 
+}
+
+
+/* new medias */
+
+@media only screen and (max-width: 1500px) {
+	#color {
+		width: 80%;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	#color {
+		width: 95%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.sizeBody {
+		flex-flow: column nowrap;
+	}
+	.sizeImg {
+		max-width: 80%;
+	}
+	.sizeWords {
+		width: 90%;
+	}
+	#sizeHead {
+		display: none;
+	}
+	.mobileButton {
+		display: inline-block;
+	}
 }

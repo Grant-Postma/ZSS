@@ -46,7 +46,9 @@ setTimeout(function(){
 function changeStuff(event){
 	console.log(event.path[0].id)
 	$(".sizeBody").removeClass("active");
+	$('#sizeHead div').removeClass("on");
 	$(`#n${event.path[0].id}`).addClass("active");
+	$(`#${event.path[0].id}`).addClass("on")
 
 }
 
@@ -54,5 +56,7 @@ function changeStuff(event){
 const headNames = document.querySelectorAll('#sizeHead div');
 headNames.forEach(name => name.addEventListener('click', changeStuff));
 
-
+function expand(){
+	
+}
 
