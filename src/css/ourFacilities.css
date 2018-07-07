@@ -78,7 +78,7 @@ section {
 }
 
 #flex-words {
-	width: 85%;
+	width: 65%;
 	margin-bottom: 50px;
 }
 
@@ -93,10 +93,11 @@ section {
     font-size: 30px;
     line-height: 1.5em;
     font-weight: 200;
-	text-align: left;
+	text-align: center;
 	opacity: 0;
     transform: translateY(50px);
-    transition: opacity 500ms, transform 1300ms;
+    transition: opacity 500ms, transform 2000ms;
+    transition-timing-function: cubic-bezier(.19,1.32,.5,1);
 }
 
 .box-container {
@@ -116,6 +117,8 @@ section {
  .box1 {
  	height: 100%;
 	width: 50%;	
+	opacity: 0;
+	transition: 1.3s
  }
 
  .text-align {
@@ -124,7 +127,8 @@ section {
  	margin: auto;
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 500ms, transform 1300ms;
+    transition: opacity 500ms, transform 2000ms;
+    transition-timing-function: cubic-bezier(.19,1.32,.5,1);
  }
 
  .text-align h3 {
@@ -197,7 +201,6 @@ section {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 45%;
 	background-color: #222222;
 	border: 1px solid #555555;
 }
@@ -220,13 +223,49 @@ section {
 }
 
 #directions {
-	width: 350px;
-	height: 30px;
-	font-size: 16px;
-	cursor: pointer;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 150px;
+	background-color: #888888;
+}
+
+#dInput {
+	width: 500px;
+	height: 40px;
+	margin-left: 10px;
+	background-color: #f8f8f8;
+	border: 1px solid #d3d3d3;
+	border-radius:  4px;
+	font-size: 18px;
+	color: gray;
+	padding-left: 10px;
+}
+
+#dButton {
+	width: 140px;
+	height: 44px;
+	margin-right: 10px;
+	background-color: #db332f;
+	font-size: 19px;
 	color: white;
-	background-color: #71a9ad;
 	border: none;
+	border-radius: 5px;
+	box-shadow: 0 3px 0 0 rgba(0,0,0,.05);
+	margin-left: 10px;
+}
+
+#dButton:hover {
+	transform: scale(1.04);
+	background-color: darkred;
+	transition: .2s;
+}
+
+ #map {
+        height: 400px; 
+        width: 500px;  
 }
 
 #right input {
@@ -255,6 +294,11 @@ section {
 	transition: 0.5s;
 	-webkit-box-shadow: 0 0 15px gray;
     box-shadow: 0 0 15px gray;
+}
+
+#flex-words h1 {
+	opacity: 0;
+    transition: opacity 500ms;
 }
 
 #menushow a div {
@@ -359,10 +403,7 @@ section {
 	padding-top: 0px;
 }
 
- #gmap_canvas img {
-      max-width: none !important;
-      background: none !important
-    }
+
 
  #footer {
  	display: flex;
@@ -370,7 +411,6 @@ section {
  	align-items: center;
  	color: #b3b3b3;
  	width: 100%;
- 	height: 10%;
  	background-color: #333333;
  	border: 1px solid #333333;
  }
@@ -416,7 +456,7 @@ section {
 
 @media only screen and (min-width: 1050px) {
 	#flex-words {
-		width: 60%;
+		width: 40%;
 	}
 
 	#info {
@@ -432,11 +472,12 @@ section {
 	#first {
 		display: none;
 	}
+	
 	#info span {
-		text-align: center !important;
-		line-height: 8px;
-		font-size: 14px;
-		color:silver;
+		display: none;
+	}
+	#map {
+		margin-left: -41px;
 	}
 	#footer p {
 		font-size: 14px;
@@ -541,5 +582,33 @@ section {
 	#flex-words p {
 		font-size: 24px;
 	}
+	#flex-words h1 {
+		font-size: 35px;
+	}
 
 }
+
+@media only screen and (max-width: 425px) {
+	#directions {
+		flex-flow: column nowrap;
+	}
+	#dInput {
+		width: 90%;
+		margin-right: 12px;
+	}
+	#dButton {
+		width: 93%;
+		margin-top: 8px;
+	}
+	#flex-words {
+		width: 85%;
+	}
+	#flex-words h1 {
+		margin: 10px;
+	}
+	#flex-words p {
+		margin: 0px;
+	}
+}
+
+

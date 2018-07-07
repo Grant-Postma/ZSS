@@ -8,7 +8,7 @@
 </head>
 	<body>
 		<div id="menushow">
-			<span id="X" onclick="off()">X</span>
+			<span id="X" onclick="off()">&#10008;</span>
 			<a style="text-decoration: none;"href="index.html"><div class="red">Home</div></a>
 			<a style="text-decoration: none;"href="ourFacilities.html"><div class="orange">Our Facilities</div></a>
 			<a style="text-decoration: none;"href="unitSize.html"><div class="green">Unit Sizes</div></a>
@@ -54,15 +54,10 @@
 			</div>
 		</div>
 		
-
-
-
-
-
-			<div id="bottom">
-				<div id="reviews">
-					<div class="review5" id="changing"></div>
-				</div>
+			<div id="directions">
+				<input id="dInput" type="text" name="somethingcompletelyrandom" placeholder="Enter Your Address / Location">
+				<input id="dButton" type="submit" name="directions" value="Get Directions!" onclick="location.href=`http://maps.google.com/maps?saddr=”${dInput.value}”&daddr=”231 N Centennial St, Zeeland, MI 49464”`">
+			</div>
 				<div id="contact">
 					
   					<span id="info">
@@ -71,10 +66,7 @@
   						<span>ZeelandSelfStorage@charter.net</span>
   						<span>Open 24 hours a day, 7 days a week</span>
   					</span>
-  					
-  					<a onclick="location.href='https://www.google.com/search?q=zeeland+self+storage&oq=zeel&aqs=chrome.0.69i59l2j69i60l3j0.1014j0j9&sourceid=chrome&ie=UTF-8#lrd=0x8819949e3c76f36b:0xb1c80fd576b762e,3,,,'" id="review-img"></a>
-  				
-
+  					 <div id="map"></div>
 				</div>
 				<div id="footer">
 					<p>@Some copywrite / business stuff</p>
@@ -83,7 +75,25 @@
 		</section>
 		
 	<script src="js/reviews.js"></script>
-	
+	<script>
+function initMap() {
+  // The location of Uluru
+  var uluru = {lat: 42.817454, lng: -86.011161};
+  // The map, centered at Uluru
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 13, center: uluru});
+  // The marker, positioned at Uluru
+  var marker = new google.maps.Marker({position: uluru, map: map});
+}
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChqZWCFqaFTVVOMd2ads09uETF0MK4RSY&callback=initMap">
+    </script>
 </body>
 
 
