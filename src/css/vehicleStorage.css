@@ -73,7 +73,7 @@ section {
 	width: 100%;
 	height: 300px;
 	margin-top: 75px;
-	background-image: url("../images/greenParticle.png");
+	background-image: url("../images/purpleParticle1.PNG");
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -234,7 +234,7 @@ section {
  .vehicle-backgorund {
      min-height: 500px;
      width: 100%;
-     background-color: pink;
+     background-color: white;
      display: flex;
      flex-flow: row nowrap;
      justify-content: center;
@@ -244,40 +244,98 @@ section {
  .vehicle-box {
     min-height: 400px;
     width: 70%;
-    background-color: green;
+    background-color: #CCCCCC;
     display: flex;
     flex-flow: row nowrap;
-    overflow: hidden;
+	overflow: hidden;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+
  }
 
  .vehicle-options {
+	background-color: #8466c2;
     width: 15%;
     display: flex;
-    flex-flow: column nowrap;
+	flex-flow: column nowrap;
+
  }
 
  .vehicle-options div {
+	 display: flex;
      width: 100%;
      height: 100px;
-     background-color: red;
+	 background-color: #8466c2;
+	 justify-content: center;
+	 align-items: center;
+	 text-align: center;
  }
 
  .vehicle-descriptions {
     width: 85%;
     display: flex;
-    flex-flow: row nowrap;
-    background-color: blue;
+	flex-flow: row nowrap;
  }
 
  .vehicle-descriptions div {
     width: 50%;
     display: flex;
-    flex-flow: column nowrap;
-    background-color: purple;
+    flex-flow: row wrap;
+	background-color: #CCCCCC;
+	justify-content: center;
+	align-items: center
  }
 
 
+ 
+ .vd-type {
+	font-size:40px;
+	
+}
+ .vd-description {
+	 margin-top:-100px;
+	 margin-left:15px;
+ }
 
+
+ .vehicle-sizes  {
+	 display: flex;
+	 justify-content: center;
+	 width: 100%;
+	 align-items: center;
+	 flex-flow: row nowrap;
+	 border-left: solid 3px #666666;
+ }
+
+ .vehicle-sizes  div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	min-width: 50px;
+	width: 20%;
+	height: 100px;
+	background-color: white;
+	border: 2px solid #8466c2;
+	border-radius: 5px; 
+	box-shadow: 3px 5px;
+	margin: 1%;
+	font-size: 26px;
+	overflow: hidden;
+}
+
+.active {
+	border-top-left-radius: 10px  !important; 
+	border-bottom-left-radius: 10px  !important;
+	background-color: #cccccc  !important;
+}
+
+.non-applicable {
+	width: 100%;
+	height: 100%;
+	opacity: .1;
+	background-color: grey;
+}
  /* reviews + contact for each page  */
 
 

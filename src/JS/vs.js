@@ -29,22 +29,20 @@ setTimeout(function () {
 }, 300);
 
 
-function changeStuff(event) {
-	var pageWidth = $(window).width();
-	console.log(event.path[0].id)
-	$(".sizeBody").removeClass("active");
-	$('#sizeHead div').removeClass("on");
-	$(`#n${event.path[0].id}`).addClass("active");
-	$(`#${event.path[0].id}`).addClass("on");
-	if (pageWidth < 768) {
-		$('#sizeHead').css('display', 'none')
-	}
+
+
+function vehicleFn(event){
+	// var pageWidth = $(window).width();
+	 console.log(this);
+	// $('#vehicle-options div').removeClass("active");
+	// $('#vehicle-options div:nth-child(2)').addClass("active");
+	// $(`#vs2`).addClass("non-applicable");
 }
 
-
-const headNames = document.querySelectorAll('#sizeHead div');
-headNames.forEach(name => name.addEventListener('click', changeStuff));
-
+console.log("fsdfasdf");
+const vehicleTabs = document.querySelectorAll('.vehicle-options div');
+console.log(vehicleTabs);
+vehicleTabs.forEach(type => type.addEventListener('click', vehicleFn));
 
 function expand() {
 	$('#sizeHead').toggle();
