@@ -1,5 +1,5 @@
 
-/*let number = 0;
+
 
 setInterval(function(){
 	number++
@@ -11,7 +11,6 @@ setInterval(function(){
 	if(number >= 5) number = 0;
 }, 5000);
 
-*/
 
 var inputSummoner = document.getElementById("dInput");
 
@@ -36,17 +35,18 @@ function formSubmit(){
 	console.log(`Name: ${newD[0]}. Message: ${newD[3]} Phone Number: ${newD[1]} Email: ${newD[2]}`)
 }
 
-function menu(){
+function menu() {
 	var menu = document.querySelector('#menushow');
 	menu.style.height = '90vh';
 	menu.style.width = '95%';
 }
 
-function off(){
+function off() {
 	var menu = document.querySelector('#menushow');
 	menu.style.height = '0px';
 	menu.style.width = '0px';
 }
+
 
 
 setTimeout(function(){
@@ -54,8 +54,13 @@ setTimeout(function(){
 	$('#color').css({'transform': 'translateY(0px)'})
 }, 0);
 
+<<<<<<< HEAD
 setTimeout(function(){
 	$(' #find-us, form, .text-align, #flex-words a').css({'opacity': '1','transform': 'translateX(0px)'})
+=======
+setTimeout(function () {
+	$(' #find-us, form, .text-align, .vehicle-box').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
+>>>>>>> e710833b85ac892b1b9af31754263da56db319bb
 }, 300);
 //home page unti sizing
 
@@ -76,7 +81,7 @@ setTimeout(function(){
 }, 500);
 
 
-function changeStuff(event){
+function changeStuff(event) {
 	var pageWidth = $(window).width();
 	$(".sizeBody").removeClass("active");
 	$('#sizeHead div').removeClass("on");
@@ -85,6 +90,7 @@ function changeStuff(event){
 	var size = document.getElementsByClassName('on')[0].innerHTML;
 	$('.dropbtn').html(`Unit Sizes - ${size}`)
 	if (pageWidth < 768) {
+
 	$('#sizeHead').css('display', 'none')
 		}
 
@@ -94,7 +100,8 @@ function changeStuff(event){
 const headNames = document.querySelectorAll('#sizeHead div');
 headNames.forEach(name => name.addEventListener('click', changeStuff));
 
-function expand(){
+
+function expand() {
 	$('#sizeHead').toggle();
 }
 
