@@ -13,6 +13,21 @@ setInterval(function(){
 
 */
 
+var inputSummoner = document.getElementById("dInput");
+
+inputSummoner.addEventListener("keyup", function (event) {
+  // Cancel the default action, if needed
+  event.preventDefault();
+  // Number 13 is the "Enter" key on the keyboard
+  if (event.keyCode === 13) {
+    // Trigger the button element with a click
+
+ 
+    location.href=`http://maps.google.com/maps?saddr=”${dInput.value}”&daddr=”231 N Centennial St, Zeeland, MI 49464”`
+
+    }
+});
+
 
 function formSubmit(){
 	var nL = document.querySelectorAll(".normalInput");
@@ -35,8 +50,9 @@ function off(){
 
 
 setTimeout(function(){
-	$('#talkP, #letsTalk, #flex-words p').css({'opacity': '1','transform': 'translateX(0px)'})
-}, 100);
+	$('#talkP, #letsTalk, #flex-words p, .box1').css({'opacity': '1','transform': 'translateX(0px)'})
+	$('#color').css({'transform': 'translateY(0px)'})
+}, 0);
 
 setTimeout(function(){
 	$(' #find-us, form, .text-align').css({'opacity': '1','transform': 'translateX(0px)'})
@@ -44,15 +60,18 @@ setTimeout(function(){
 
 
 function changeStuff(event){
+
 	var pageWidth = $(window).width();
-	console.log(event.path[0].id)
 	$(".sizeBody").removeClass("active");
 	$('#sizeHead div').removeClass("on");
 	$(`#n${event.path[0].id}`).addClass("active");
 	$(`#${event.path[0].id}`).addClass("on");
+	var size = document.getElementsByClassName('on')[0].innerHTML;
+	$('.dropbtn').html(`Unit Sizes - ${size}`)
 	if (pageWidth < 768) {
 	$('#sizeHead').css('display', 'none')
-}
+		}
+
 }
 
 
@@ -62,4 +81,8 @@ headNames.forEach(name => name.addEventListener('click', changeStuff));
 function expand(){
 	$('#sizeHead').toggle();
 }
+
+var size = document.getElementsByClassName('on').a.innerHTML;
+
+
 
