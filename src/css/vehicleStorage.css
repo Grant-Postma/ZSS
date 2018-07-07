@@ -248,7 +248,7 @@ section {
     display: flex;
     flex-flow: row nowrap;
 	overflow: hidden;
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 	border-radius: 10px;
 
  }
