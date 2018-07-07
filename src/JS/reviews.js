@@ -55,7 +55,7 @@ setTimeout(function(){
 }, 0);
 
 setTimeout(function(){
-	$(' #find-us, form, .text-align').css({'opacity': '1','transform': 'translateX(0px)'})
+	$(' #find-us, form, .text-align, #flex-words a').css({'opacity': '1','transform': 'translateX(0px)'})
 }, 300);
 //home page unti sizing
 
@@ -70,6 +70,10 @@ setTimeout(function(){
 setTimeout(function(){
 	$('#unit3').css({'transform': 'translateY(0px)'})
 }, 400);
+
+setTimeout(function(){
+	$('.contact-dividor').css({'opacity': '1'})
+}, 500);
 
 
 function changeStuff(event){

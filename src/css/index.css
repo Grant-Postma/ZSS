@@ -225,6 +225,9 @@ section {
 	height: 200px;
 	background-color: #888888;
     background-size: cover;
+    opacity: 0;
+	transition: opacity 1000ms;
+
 }
 
 .contact-dividor div {
@@ -307,7 +310,7 @@ section {
 	display: inline-block;
 	border-radius: 4px;
 	opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(30px);
     transition: opacity 500ms, transform 2000ms;
     transition-timing-function: cubic-bezier(.19,1.32,.5,1);
 }
