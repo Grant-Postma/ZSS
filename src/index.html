@@ -4,8 +4,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js%22%3E"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
@@ -26,6 +25,7 @@
 				 height="60" width="200">
 			</a>
 			<span id="right">
+				<input type="button" name="menu" value="Menu" onclick="menu()">
 				<a id="orange" href="./ourFacilities.html">Our Facilities</a>
 				<a id="green" href="./unitSize.html">Unit Sizes</a>
 				<a id="purple" href="./vehicleStorage.html">Vehicle Storage</a>
@@ -42,18 +42,18 @@
 			</div>
 		</div>
 		<div class="unit-deals">
-			<div onclick="window.location.href='./unitSize.html'">
+			<div id="unit1" onclick="window.location.href='./unitSize.html'">
 				<h2>Small</h2>
 				<h3>Starting at</h3>
 				<h1>75$<small>/month</small></h1>
 			</div>
-			<div onclick="window.location.href='./unitSize.html'">
+			<div id="unit2" onclick="window.location.href='./unitSize.html'">
 				<h2>Medium</h2>
 				<h3>Starting at</h3>
 				<h1>100$<small>/month</small></h1>
 			</div>
 
-			<div onclick="window.location.href='./unitSize.html'">
+			<div id="unit3" onclick="window.location.href='./unitSize.html'">
 				<h2>Large</h2>
 				<h3>Starting at</h3>
 				<h1>125$<small>/month</small></h1>

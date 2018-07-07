@@ -50,17 +50,29 @@ function off(){
 
 
 setTimeout(function(){
-	$('#talkP, #letsTalk, #flex-words p, .box1').css({'opacity': '1','transform': 'translateX(0px)'})
+	$('#talkP, #letsTalk, #flex-words p, .box1, #flex-words h1, #flex-words h2').css({'opacity': '1','transform': 'translateX(0px)'})
 	$('#color').css({'transform': 'translateY(0px)'})
 }, 0);
 
 setTimeout(function(){
 	$(' #find-us, form, .text-align').css({'opacity': '1','transform': 'translateX(0px)'})
 }, 300);
+//home page unti sizing
+
+setTimeout(function(){
+	$('#unit1').css({'transform': 'translateY(0px)'})
+}, 0);
+
+setTimeout(function(){
+	$('#unit2').css({'transform': 'translateY(0px)'})
+}, 200);
+
+setTimeout(function(){
+	$('#unit3').css({'transform': 'translateY(0px)'})
+}, 400);
 
 
 function changeStuff(event){
-
 	var pageWidth = $(window).width();
 	$(".sizeBody").removeClass("active");
 	$('#sizeHead div').removeClass("on");
