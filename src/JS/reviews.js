@@ -57,10 +57,6 @@ setTimeout(function(){
 
 setTimeout(function(){
 	$(' #find-us, form, .text-align, #flex-words a').css({'opacity': '1','transform': 'translateX(0px)'})
-
-setTimeout(function () {
-	$(' #find-us, form, .text-align, .vehicle-box').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
-
 }, 300);
 //home page unti sizing
 
