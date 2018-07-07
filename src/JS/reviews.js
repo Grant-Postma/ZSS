@@ -54,13 +54,13 @@ setTimeout(function(){
 	$('#color').css({'transform': 'translateY(0px)'})
 }, 0);
 
-<<<<<<< HEAD
+
 setTimeout(function(){
 	$(' #find-us, form, .text-align, #flex-words a').css({'opacity': '1','transform': 'translateX(0px)'})
-=======
+
 setTimeout(function () {
 	$(' #find-us, form, .text-align, .vehicle-box').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
->>>>>>> e710833b85ac892b1b9af31754263da56db319bb
+
 }, 300);
 //home page unti sizing
 
