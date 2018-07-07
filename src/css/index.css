@@ -135,6 +135,86 @@ section {
 	margin: 5%;
 }
 
+#directions {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 150px;
+	background-color: #888888;
+}
+
+#dInput {
+	width: 500px;
+	height: 40px;
+	margin-left: 10px;
+	background-color: #f8f8f8;
+	border: 1px solid #d3d3d3;
+	border-radius:  4px;
+	font-size: 18px;
+	color: gray;
+	padding-left: 10px;
+}
+
+#dButton {
+	width: 140px;
+	height: 44px;
+	margin-right: 10px;
+	background-color: #db332f;
+	font-size: 19px;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 3px 0 0 rgba(0,0,0,.05);
+	margin-left: 10px;
+}
+
+#dButton:hover {
+	transform: scale(1.04);
+	background-color: darkred;
+	transition: .2s;
+}
+
+ #map {
+        height: 400px; 
+        width: 500px;  
+}
+
+#contact2 {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	background-color: #222222;
+	border: 1px solid #555555;
+}
+
+
+#info {
+	display: flex;
+	flex-flow: column nowrap;
+	margin: 20px;
+	text-align: center;
+	color: white;
+	font-size: 18px;
+}
+
+#info span {
+	margin: 20px;
+}
+
+ #footer {
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+ 	color: #b3b3b3;
+ 	width: 100%;
+ 	background-color: #333333;
+ 	border: 1px solid #333333;
+ }
+
 .contact-dividor {
 	display: flex;
 	flex-flow: row nowrap;
@@ -340,7 +420,43 @@ section {
 	background-color: #71a9ad;
 }
 
+#menushow {
+	display: flex;
+	flex-flow: column nowrap;
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	height: 0vh;
+	width: 0%;
+	background-color: white;
+	z-index: 100;
+	transition: 0.5s;
+	-webkit-box-shadow: 0 0 15px gray;
+    box-shadow: 0 0 15px gray;
+}
 
+#menushow a div {
+	flex: 1 auto;
+	font-size: 20px;
+	margin-left: 10px;
+	text-align: center;
+	padding: 50px;
+	-webkit-box-shadow: 0 0 15px gray;
+    box-shadow: 0px 15px 10px -15px #111;
+    color: rgb(102, 102, 102);
+}
+
+#X {
+	font-weight: bold;
+	margin: 10px;
+	margin-bottom: 20px;
+}
+
+#X:hover {
+	font-size: 20px;
+	color: red;
+	cursor: pointer;
+}
 
 #contact {
 	width: 100%;
@@ -432,7 +548,9 @@ section {
 
 	.box {
 		height: 900px;
-
+	}
+	#directions {
+		margin-top: 400px;
 	}
 
 	.unit-deals div {
@@ -449,3 +567,52 @@ section {
 	
 }
 
+@media only screen and (max-width: 768px) {
+	#info span {
+		display: none;
+	}
+	#map {
+		margin-left: -41px;
+	}
+}
+
+
+@media only screen and (min-width: 1050px) {
+	#info {
+		margin: 70px;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	#directions {
+		flex-flow: column nowrap;
+	}
+	#dInput {
+		width: 90%;
+		margin-right: 12px;
+	}
+	#dButton {
+		width: 93%;
+		margin-top: 8px;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	#review-img {
+		display: none;
+	}
+	#info span {
+		margin:10px;
+		text-align: left;
+	}
+
+	#right a {
+		display: none;
+	}
+	#right input {
+		display: inline-block;
+	}
+	#right {
+		float: none;
+	}
+}

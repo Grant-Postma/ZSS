@@ -96,7 +96,8 @@ section {
 	text-align: center;
 	opacity: 0;
     transform: translateY(50px);
-    transition: opacity 500ms, transform 1200ms;
+    transition: opacity 500ms, transform 2000ms;
+    transition-timing-function: cubic-bezier(.19,1.32,.5,1);
 }
 
 .box-container {
@@ -126,7 +127,8 @@ section {
  	margin: auto;
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 500ms, transform 1200ms;
+    transition: opacity 500ms, transform 2000ms;
+    transition-timing-function: cubic-bezier(.19,1.32,.5,1);
  }
 
  .text-align h3 {
