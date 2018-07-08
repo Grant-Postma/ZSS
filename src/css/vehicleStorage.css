@@ -304,12 +304,21 @@ section {
     background-color: #CCCCCC;
     display: flex;
     flex-flow: row nowrap;
+<<<<<<< HEAD
     overflow: hidden;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     transform: translateX(-175%);
     transition: opacity 500ms, transform 1500ms;
     transition-timing-function: cubic-bezier(.19,1.32,.5,1);
+=======
+	overflow: hidden;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	transform: translateX(-175%);
+	transition: opacity 500ms, transform 1500ms;
+	transition-timing-function: cubic-bezier(.19,1.32,.5,1);
+>>>>>>> cc5ccfc77e69d9754ee6973d5aec5809ca02eed5
  }
 
  .vehicle-options {
