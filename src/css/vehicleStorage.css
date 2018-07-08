@@ -5,6 +5,13 @@
 
 }
 
+::selection {
+	background: silver; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+	background: silver; /* Gecko Browsers */
+}
+
 body {
 	margin: 0;
 }
@@ -298,6 +305,14 @@ section {
         width: 500px;  
 }
 
+.vd-box {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.vd-box * {
+	margin: 2%;
+}
 .vehicle-box {
     min-height: 400px;
     width: 70%;
@@ -696,6 +711,11 @@ section {
 		font-size: 40px !important;
 	}
 
+	#twoCar {
+		font-size: 30px !important;
+	}
+
+
 	.vehicle-options div img {
 		height: 60px;
 		width: 90px;
@@ -785,9 +805,6 @@ section {
 	}
 	.box-container {
 		flex-flow: column nowrap;
-	}
-	.section {
-		height: 350vh;
 	}
 	.box1 {
 		height: 30%;

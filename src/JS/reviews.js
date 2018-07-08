@@ -80,10 +80,13 @@ setTimeout(function () {
 
 function changeStuff(event) {
 	var pageWidth = $(window).width();
+	var tab;
+	if(event.path) tab = event.path[0].id;
+	else tab = event.currentTarget.id;
 	$(".sizeBody").removeClass("active");
 	$('#sizeHead div').removeClass("on");
-	$(`#n${event.path[0].id}`).addClass("active");
-	$(`#${event.path[0].id}`).addClass("on");
+	$(`#n${tab}`).addClass("active");
+	$(`#${tab}`).addClass("on");
 	var size = document.getElementsByClassName('on')[0].innerHTML;
 	$('.dropbtn').html(`Unit Sizes - ${size} <i id="arrow" class="fas fa-angle-double-down"></i>`)
 	if (pageWidth < 768) {
