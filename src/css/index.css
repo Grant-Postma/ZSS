@@ -108,11 +108,11 @@ section {
 }
 
 
-.unit-deals div:hover {
-    -ms-transform: scale(1.1, 1.1); /* IE 9 */
-    -webkit-transform: scale(1.1, 1.1); /* Safari */
-	transform: scale(1.1, 1.1);
-	cursor:pointer;
+.unit-deals div:hover  {
+    -ms-transform: scale(1.1, 1.1) !important; /* IE 9 */
+    -webkit-transform: scale(1.1, 1.1) !important; /* Safari */
+	transform: scale(1.1, 1.1) !important;
+	cursor:pointer !important;
 }
 
 .unit-deals h1{

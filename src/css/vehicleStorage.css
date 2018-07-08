@@ -262,7 +262,9 @@ section {
 	overflow: hidden;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 	border-radius: 10px;
-
+	transform: translateX(-200%);
+	transition: opacity 500ms, transform 2000ms;
+	transition-timing-function: cubic-bezier(.19,1.32,.5,1);
  }
 
  .vehicle-options {
@@ -281,12 +283,14 @@ section {
 	 justify-content: center;
 	 align-items: center;
 	 text-align: center;
+
  }
 
  .vehicle-descriptions {
     width: 85%;
     display: flex;
 	flex-flow: row nowrap;
+
  }
 
  .vehicle-descriptions div {
@@ -297,6 +301,7 @@ section {
 	justify-content: center;
 	align-items: center
  }
+
 
 
  
@@ -311,13 +316,14 @@ section {
 
 
  .vehicle-sizes  {
-	 display: flex;
-	 justify-content: center;
-	 width: 100%;
-	 align-items: center;
-	 flex-flow: row nowrap;
-	 border-left: solid 3px #666666;
- }
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	align-items: center;
+	flex-flow: row nowrap;
+	border-left: solid 3px #666666;
+
+}
 
  .vehicle-sizes  div {
 	display: flex;
@@ -640,11 +646,8 @@ section {
 		flex-flow: row wrap;
 		width: 100%;
 		padding-bottom: 30px;
-		transform: translateX(200px);
-		transition: 1s;
-		transition-timing-function: cubic-bezier(.19,1.32,.5,1);
-
 	}
+
 	.vehicle-sizes  div {
 		width: 20%;
 		height: 100px;

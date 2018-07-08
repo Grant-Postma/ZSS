@@ -31,8 +31,10 @@ setTimeout(function () {
 }, 300);
 
 setTimeout(function () {
-	$(' .vd-box .vehicle-sizes').css({ 'transform': 'translateX(0px)' })
-}, 300);
+	$('.vehicle-box, #contact').css({ 'opacity': '1','transform': 'translateY(0px)' })
+}, 100);
+
+
 //home page unti sizin
 
 
