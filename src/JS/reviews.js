@@ -1,6 +1,6 @@
 
 
-
+/*
 setInterval(function(){
 	number++
 	var block = document.getElementById('changing');
@@ -11,7 +11,7 @@ setInterval(function(){
 	if(number >= 5) number = 0;
 }, 5000);
 
-
+*/
 var inputSummoner = document.getElementById("dInput");
 
 inputSummoner.addEventListener("keyup", function (event) {
@@ -101,7 +101,6 @@ function expand() {
 	$('#sizeHead').toggle();
 }
 
-var size = document.getElementsByClassName('on').a.innerHTML;
 
 
 
