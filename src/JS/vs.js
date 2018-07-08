@@ -29,6 +29,10 @@ setTimeout(function () {
 setTimeout(function () {
 	$(' #find-us, form, .text-align, #flex-words a').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
 }, 300);
+
+setTimeout(function () {
+	$(' .vd-box .vehicle-sizes').css({ 'transform': 'translateX(0px)' })
+}, 300);
 //home page unti sizin
 
 
