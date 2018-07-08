@@ -550,3 +550,33 @@ section {
 		float: none;
 	}
 }
+
+
+@media only screen and (max-width: 550px) {
+	.unit-deals div {
+		margin: 10px;
+		height: 115px;
+	}
+	.unit-deals div h1 {
+		font-size: 30px;
+	}
+	.unit-deals div h2 {
+		font-size: 20px;
+	}
+	.unit-deals div h3 {
+		font-size: 13px;
+	}
+	.unit-deals small {
+		display: none;
+	}
+	#flex-words a {
+		font-size: 22px;
+		padding: 10px 20px;
+	}
+	#flex-words h1 {
+		font-size: 40px;
+	}
+	#flex-words h2 {
+		font-size: 22px;
+	}
+}
