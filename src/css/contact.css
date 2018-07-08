@@ -265,6 +265,7 @@ label {
 	transition: 0.5s;
 	-webkit-box-shadow: 0 0 15px gray;
     box-shadow: 0 0 15px gray;
+    overflow: scroll;
 }
 
 #menushow a div {
