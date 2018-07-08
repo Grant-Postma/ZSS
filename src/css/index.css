@@ -313,7 +313,7 @@ section {
     background-color: grey; /* Green */
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 11px 25px;
     text-align: center;
     text-decoration: none;
 	display: inline-block;
@@ -579,5 +579,8 @@ section {
 	}
 	#flex-words h2 {
 		font-size: 22px;
+	}
+	.unit-deals {
+		height: 250px;
 	}
 }
