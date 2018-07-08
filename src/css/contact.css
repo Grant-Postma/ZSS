@@ -199,6 +199,8 @@ label {
 	margin-bottom: 46px;
 }
 
+
+
 #info span {
 	margin: 20px;
 	color: rgb(230,230,230);
@@ -299,8 +301,11 @@ label {
 }
 
 @media only screen and (max-width: 850px) {
+	#flex-contact {
+		flex-flow: column nowrap;
+	}
 	#find-us {
-		display: none;
+		margin-top: 10px !important;
 	}
 }
 
