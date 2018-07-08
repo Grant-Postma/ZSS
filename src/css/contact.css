@@ -87,10 +87,20 @@ span a {
     transform: translateY(50px);
     transition: opacity 500ms, transform 1300ms;
 }
-form {
+.pure-group {
 	opacity: 0;
     transform: translateY(50px);
     transition: opacity 600ms, transform 1000ms;
+}
+.pure-button {
+	opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 600ms, transform 1000ms;
+}
+
+label {
+	padding-bottom: 10px;
+	font-size: 17px;
 }
 
 .normalInput {
@@ -218,6 +228,9 @@ form {
 	margin-bottom: 20px;
 }
 
+#message {
+	height: 150px;
+}
 #info {
 	display: flex;
 	flex-flow: column nowrap;
@@ -284,6 +297,7 @@ form {
 	opacity: 0;
     transform: translateY(50px);
     transition: opacity 600ms, transform 1000ms;
+    margin-left: 30px;
 }
 
 #right input {
