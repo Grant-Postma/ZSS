@@ -1,7 +1,12 @@
 
 
+<<<<<<< HEAD
 
 setInterval(function () {
+=======
+/*
+setInterval(function(){
+>>>>>>> 7adfd9d81fcf3bf1451758144f4256e9422152f1
 	number++
 	var block = document.getElementById('changing');
 	block.classList.remove(`review5`);
@@ -11,7 +16,7 @@ setInterval(function () {
 	if (number >= 5) number = 0;
 }, 5000);
 
-
+*/
 var inputSummoner = document.getElementById("dInput");
 
 inputSummoner.addEventListener("keyup", function (event) {
@@ -100,7 +105,6 @@ function expand() {
 	$('#sizeHead').toggle();
 }
 
-var size = document.getElementsByClassName('on').a.innerHTML;
 
 
 
