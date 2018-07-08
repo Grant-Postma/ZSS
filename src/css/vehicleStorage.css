@@ -262,8 +262,8 @@ section {
 	overflow: hidden;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 	border-radius: 10px;
-	transform: translateX(-200%);
-	transition: opacity 500ms, transform 1000ms;
+	transform: translateX(-175%);
+	transition: opacity 500ms, transform 1500ms;
 	transition-timing-function: cubic-bezier(.19,1.32,.5,1);
  }
 
