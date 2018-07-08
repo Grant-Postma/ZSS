@@ -88,7 +88,7 @@ function changeStuff(event) {
 	$(`#n${tab}`).addClass("active");
 	$(`#${tab}`).addClass("on");
 	var size = document.getElementsByClassName('on')[0].innerHTML;
-	$('.dropbtn').html(`Unit Sizes - ${size}`)
+	$('.dropbtn').html(`Unit Sizes - ${size} <i id="arrow" class="fas fa-angle-double-down"></i>`)
 	if (pageWidth < 768) {
 		$('#sizeHead').css('display', 'none')
 	}

@@ -416,7 +416,7 @@ section {
 		font-size: 15px;
 	}
 	#menushow a div {
-		padding: 20px;
+		padding: 30px;
 	}
 
 }
@@ -491,7 +491,7 @@ section {
 	#sizeHead {
 		display: none;
 		position: absolute;
- 		width: 95%;
+ 		width: 100%;
  		z-index: 100;
  		border: none;
 	}
