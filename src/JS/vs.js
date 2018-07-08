@@ -21,13 +21,15 @@ function off() {
 
 
 setTimeout(function () {
-	$('#talkP, #letsTalk, #flex-words p').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
-}, 100);
+	$('#talkP, #letsTalk, #flex-words p, .box1, #flex-words h1, #flex-words h2').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
+	$('#color').css({ 'transform': 'translateY(0px)' })
+}, 0);
+
 
 setTimeout(function () {
-	$(' #find-us, form, .text-align').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
+	$(' #find-us, form, .text-align, #flex-words a').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
 }, 300);
-
+//home page unti sizin
 
 
 
@@ -43,7 +45,7 @@ function vehicleFn(event){
 	 if(tab == 1 ){
 		$(`#vs1`).addClass("non-applicable"); 
 		$(`.vd-type`).html("Motorcycle Storage");
-		$(`.vd-description`).html("All brands and sizes of motorcycle will fit in 10x10+. Some smaller motorcycles may fit in a 5x5")
+		$(`.vd-description`).html("All sizes of motorcycle will fit in 10x10+. Some smaller motorcycles may fit in a 5x5")
 	 }
 	 
 	 if(tab == 2 ){
@@ -74,8 +76,7 @@ function vehicleFn(event){
 		$(`#vs7`).addClass("non-applicable");
 		$(`#vs8`).addClass("non-applicable");
 		$(`#vs9`).addClass("non-applicable");
-		$(`#vs10`).addClass("non-applicable");
-		$(`.vd-type`).html("Storing Two Automobiles");
+		$(`.vd-type`).html("Boat Storage");
 		$(`.vd-description`).html("These Units Range wildly in size so they should be able to fit boats of all sizes. These units are limited in number.")
 	 }
 }
