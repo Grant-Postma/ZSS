@@ -349,7 +349,17 @@ section {
 
 }
 
-
+@media only screen and (max-width: 700px) {
+	.text-align {
+		font-size: 15px !important;
+	}
+	#flex-words h1 {
+		font-size: 30px !important;
+	}
+	#flex-words p {
+		font-size: 15px !important;
+	}
+}
 
 @media only screen and (max-width: 768px) {
 	
@@ -369,10 +379,11 @@ section {
 		margin-bottom: 0px
 	}
 	#flex-words h1 {
-		font-size: 30px;
+		font-size: 40px;
+    	margin: 0px;
 	}
 	#flex-words p {
-		font-size: 15px;
+		font-size: 18px;
 	}
 	.box1 {
 		width: 100%;
@@ -384,14 +395,14 @@ section {
 		flex-flow: column nowrap;
 	}
 	.section {
-		height: 350vh;
+		height: 270vh;
 	}
 	.box1 {
 		height: 30%;
 	}
 	.text-align {
 		color: #666;
-		font-size: 15px;
+		font-size: 24px;
 	}
 	.text-align li {
 		line-height: 50px;
@@ -408,7 +419,7 @@ section {
 		order: 1;
 	}
 	#menushow a div {
-		padding: 20px;
+		padding: 30px;
 	}
 
 }
