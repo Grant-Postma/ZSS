@@ -1,7 +1,13 @@
 
 * {
 	font-family: Lato,sans-serif;
+}
 
+::selection {
+  background: silver; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: silver; /* Gecko Browsers */
 }
 
 body {

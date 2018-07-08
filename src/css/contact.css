@@ -4,6 +4,13 @@
 	color: rgb(102, 102, 102);
 }
 
+::selection {
+  background: silver; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: silver; /* Gecko Browsers */
+}
+
 body {
 	margin: 0;
 }
