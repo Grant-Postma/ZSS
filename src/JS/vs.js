@@ -31,7 +31,7 @@ setTimeout(function () {
 }, 300);
 
 setTimeout(function () {
-	$('.vehicle-box, #contact').css({ 'opacity': '1','transform': 'translateY(0px)' })
+	$('.vehicle-box, #contact').css({ 'opacity': '1', 'transform': 'translateY(0px)' })
 }, 100);
 
 
@@ -39,17 +39,24 @@ setTimeout(function () {
 
 
 
-function vehicleFn(event){
+function vehicleFn(event) {
 	var pageWidth = $(window).width();
-	 var tab = event.path[1].id;
-	 console.log(tab);
-	 if(tab != 1 && tab != 2 && tab != 3 && tab != 4 ) tab = event.path[0].id;
-	 $('.vehicle-options div').removeClass("active");
-	 $(`#${tab}`).addClass("active");
-	 $('.vehicle-sizes div').removeClass("non-applicable");
-	 $('.vehicle-sizes div').removeClass("applicable");
+	var tab;
+	if (event.path) {
+		tab = event.path[1].id;
+		if (tab != 1 && tab != 2 && tab != 3 && tab != 4) tab = event.path[0].id;
+	}
+	else {
+		tab = event.currentTarget.id;
+	}
 
-	 if(tab == 1 ){
+	console.log(tab);
+	$('.vehicle-options div').removeClass("active");
+	$(`#${tab}`).addClass("active");
+	$('.vehicle-sizes div').removeClass("non-applicable");
+	$('.vehicle-sizes div').removeClass("applicable");
+
+	if (tab == 1) {
 		$(`#vs1`).addClass("non-applicable");
 		$(`#vs2`).addClass("applicable");
 		$(`#vs3`).addClass("applicable");
@@ -61,13 +68,13 @@ function vehicleFn(event){
 		$(`#vs9`).addClass("applicable");
 		$(`#vs10`).addClass("applicable");
 		$(`#vs11`).addClass("applicable");
-		 
+
 		$(`.vd-type`).html("Motorcycle Storage");
 		$(`.vd-description`).html("All sizes of motorcycle will fit in 10x10+. Some smaller motorcycles may fit in a 5x5")
-	 }
-	 
-	 if(tab == 2 ){
-		$(`#vs1`).addClass("non-applicable"); 
+	}
+
+	if (tab == 2) {
+		$(`#vs1`).addClass("non-applicable");
 		$(`#vs2`).addClass("non-applicable");
 		$(`#vs3`).addClass("non-applicable");
 		$(`#vs4`).addClass("applicable");
@@ -80,10 +87,10 @@ function vehicleFn(event){
 		$(`#vs11`).addClass("applicable");
 		$(`.vd-type`).html("Automobile Storage");
 		$(`.vd-description`).html("The height restriction on all units excluding 15x45+ is 10'.")
-	 }
+	}
 
-	 if(tab == 3 ){
-		$(`#vs1`).addClass("non-applicable"); 
+	if (tab == 3) {
+		$(`#vs1`).addClass("non-applicable");
 		$(`#vs2`).addClass("non-applicable");
 		$(`#vs3`).addClass("non-applicable");
 		$(`#vs4`).addClass("non-applicable");
@@ -96,10 +103,10 @@ function vehicleFn(event){
 		$(`#vs11`).addClass("applicable");
 		$(`.vd-type`).html("Two Automobile Storage");
 		$(`.vd-description`).html("The height restriction on all units excluding 15x45+ is 10'.")
-	 }
+	}
 
-	 if(tab == 4 ){
-		$(`#vs1`).addClass("non-applicable"); 
+	if (tab == 4) {
+		$(`#vs1`).addClass("non-applicable");
 		$(`#vs2`).addClass("non-applicable");
 		$(`#vs3`).addClass("non-applicable");
 		$(`#vs4`).addClass("non-applicable");
@@ -112,7 +119,7 @@ function vehicleFn(event){
 		$(`#vs11`).addClass("applicable");
 		$(`.vd-type`).html("Boat Storage");
 		$(`.vd-description`).html("These Units Range wildly in size so they should be able to fit boats of all sizes. These units are limited in number.")
-	 }
+	}
 }
 
 console.log("fsdfasdf");
