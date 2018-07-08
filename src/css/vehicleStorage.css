@@ -99,7 +99,7 @@ section {
 	width: 100%;
 	height: 300px;
 	margin-top: 75px;
-	background-image: url("../images/purpleParticle1.PNG");
+	background-image: url("../Images/purpleParticle1.PNG");
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -213,17 +213,17 @@ section {
  }
 
  #one {
- 	background-image: url("../images/security.jpg");
+ 	background-image: url("../Images/security.jpg");
  	background-size: cover;
  	background-position: center;
  }
  #two {
- 	background-image: url("../images/convienence.jpg");
+ 	background-image: url("../Images/convienence.jpg");
  	background-size: cover;
  	background-position: center;
  }
  #three {
- 	background-image: url("../images/focus2.png");
+ 	background-image: url("../Images/focus2.png");
  	background-size: cover;
  	background-position: center;
  }
@@ -543,7 +543,7 @@ section {
 	margin: auto;
 	width: 55%;
 	height: 100%;
-	background-image: url("../images/transparent1.png");
+	background-image: url("../Images/transparent1.png");
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
@@ -561,7 +561,7 @@ section {
 	margin: auto;
 	width: 55%;
 	height: 100%;
-	background-image: url("../images/transparent1.png");
+	background-image: url("../Images/transparent1.png");
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;

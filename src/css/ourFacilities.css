@@ -78,7 +78,7 @@ section {
 	width: 100%;
 	height: 300px;
 	margin-top: 75px;
-	background-image: url("../images/yellowParticle.png");
+	background-image: url("../Images/yellowParticle.png");
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -138,17 +138,17 @@ section {
  }
 
  #one {
- 	background-image: url("../images/security.jpg");
+ 	background-image: url("../Images/security.jpg");
  	background-size: cover;
  	background-position: center;
  }
  #two {
- 	background-image: url("../images/convienence.jpg");
+ 	background-image: url("../Images/convienence.jpg");
  	background-size: cover;
  	background-position: center;
  }
  #three {
- 	background-image: url("../images/focus2.png");
+ 	background-image: url("../Images/focus2.png");
  	background-size: cover;
  	background-position: center;
  }
