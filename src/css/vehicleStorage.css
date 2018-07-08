@@ -252,19 +252,64 @@ section {
      justify-content: center;
      align-items: center;
  }
+ #directions {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 150px;
+	background-color: #888888;
+}
 
- .vehicle-box {
+#dInput {
+	width: 500px;
+	height: 40px;
+	margin-left: 10px;
+	background-color: #f8f8f8;
+	border: 1px solid #d3d3d3;
+	border-radius:  4px;
+	font-size: 18px;
+	color: gray;
+	padding-left: 10px;
+}
+
+#dButton {
+	width: 140px;
+	height: 44px;
+	margin-right: 10px;
+	background-color: #db332f;
+	font-size: 19px;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 3px 0 0 rgba(0,0,0,.05);
+	margin-left: 10px;
+}
+
+#dButton:hover {
+	transform: scale(1.04);
+	background-color: darkred;
+	transition: .2s;
+}
+
+ #map {
+        height: 400px; 
+        width: 500px;  
+}
+
+.vehicle-box {
     min-height: 400px;
     width: 70%;
     background-color: #CCCCCC;
     display: flex;
     flex-flow: row nowrap;
-	overflow: hidden;
-	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-	border-radius: 10px;
-	transform: translateX(-200%);
-	transition: opacity 500ms, transform 2000ms;
-	transition-timing-function: cubic-bezier(.19,1.32,.5,1);
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transform: translateX(-175%);
+    transition: opacity 500ms, transform 1500ms;
+    transition-timing-function: cubic-bezier(.19,1.32,.5,1);
  }
 
  .vehicle-options {
@@ -283,14 +328,12 @@ section {
 	 justify-content: center;
 	 align-items: center;
 	 text-align: center;
-
  }
 
  .vehicle-descriptions {
     width: 85%;
     display: flex;
 	flex-flow: row nowrap;
-
  }
 
  .vehicle-descriptions div {
@@ -301,7 +344,6 @@ section {
 	justify-content: center;
 	align-items: center
  }
-
 
 
  
@@ -316,14 +358,13 @@ section {
 
 
  .vehicle-sizes  {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-	align-items: center;
-	flex-flow: row nowrap;
-	border-left: solid 3px #666666;
-
-}
+	 display: flex;
+	 justify-content: center;
+	 width: 100%;
+	 align-items: center;
+	 flex-flow: row nowrap;
+	 border-left: solid 3px #666666;
+ }
 
  .vehicle-sizes  div {
 	display: flex;
@@ -421,15 +462,6 @@ section {
 	margin: 20px;
 }
 
-#directions {
-	width: 350px;
-	height: 30px;
-	font-size: 16px;
-	cursor: pointer;
-	color: white;
-	background-color: #71a9ad;
-	border: none;
-}
 
 #right input {
 	display: none;
@@ -646,8 +678,11 @@ section {
 		flex-flow: row wrap;
 		width: 100%;
 		padding-bottom: 30px;
-	}
+		transform: translateX(200px);
+		transition: 1s;
+		transition-timing-function: cubic-bezier(.19,1.32,.5,1);
 
+	}
 	.vehicle-sizes  div {
 		width: 20%;
 		height: 100px;
@@ -864,5 +899,28 @@ section {
 	}
 	.mobileButton {
 		display: inline-block;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	#info span {
+		display: none;
+	}
+	#map {
+		margin-left: -41px;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	#directions {
+		flex-flow: column nowrap;
+	}
+	#dInput {
+		width: 90%;
+		margin-right: 12px;
+	}
+	#dButton {
+		width: 93%;
+		margin-top: 8px;
 	}
 }
