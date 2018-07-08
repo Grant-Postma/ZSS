@@ -78,7 +78,7 @@ section {
 	width: 100%;
 	height: 300px;
 	margin-top: 75px;
-	background-image: url("../images/greenParticle.png");
+	background-image: url("../Images/greenParticle.png");
     background-repeat: no-repeat;
     background-size: cover; 
 }
@@ -222,7 +222,7 @@ section {
     border-radius: 6px;
     padding: 20px 25px;
     max-width: 40%;
-    content: url('../images/soldOut.png'); 
+    content: url('../Images/soldOut.png'); 
     z-index: 5;
     opacity: .6;
 }
