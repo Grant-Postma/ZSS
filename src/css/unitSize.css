@@ -228,9 +228,10 @@ section {
     border: 1px solid #c2c2c2;
     border-radius: 6px;
     padding: 20px 25px;
-    max-height: 200px;
+    max-width: 40%;
     content: url('../images/soldOut.png'); 
-    z-index: 101;
+    z-index: 5;
+    opacity: .6;
 }
 
 

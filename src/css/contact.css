@@ -280,6 +280,7 @@ form {
 #find-us {
 	position: relative;
 	top:120px;
+	text-align: center;
 	opacity: 0;
     transform: translateY(50px);
     transition: opacity 600ms, transform 1000ms;
