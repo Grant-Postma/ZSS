@@ -45,7 +45,6 @@ span a {
 }
 
 #flex-words {
-	width: 50% !important;
 	margin-bottom: 50px;
 
 }
@@ -127,17 +126,6 @@ section {
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);;
 }
 
-
-#flex-words p {
-	color: #fff;
-    font-size: 30px;
-    line-height: 1.5em;
-    font-weight: 200;
-	text-align: left;
-	opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 500ms, transform 1300ms;
-}
 
 #sizeContainer {
 	display: flex;
@@ -678,9 +666,6 @@ section {
 }
 
 @media only screen and (min-width: 1050px) {
-	#flex-words {
-		width: 60%;
-	}
 
 	#info {
 		margin: 70px;

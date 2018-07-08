@@ -1,12 +1,8 @@
 
 
-<<<<<<< HEAD
 
-setInterval(function () {
-=======
 /*
 setInterval(function(){
->>>>>>> 7adfd9d81fcf3bf1451758144f4256e9422152f1
 	number++
 	var block = document.getElementById('changing');
 	block.classList.remove(`review5`);
