@@ -15,6 +15,14 @@ setInterval(function(){
 */
 var inputSummoner = document.getElementById("dInput");
 
+var url_string = window.location.href;
+var url = new URL(url_string);
+var input= {};
+input.path = [{}];
+input.path[0].id = url.searchParams.get("size");
+console.log(input.path[0].id);
+if(input.path[0].id) changeStuff(input);
+
 inputSummoner.addEventListener("keyup", function (event) {
 	// Cancel the default action, if needed
 	event.preventDefault();

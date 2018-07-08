@@ -761,11 +761,18 @@ section {
 	}
 }
 
-@media only screen and (min-width: 1050px) {
+@media only screen and (min-width: 1200px) {
 
 	#info {
 		margin: 70px;
 
+	}
+	
+}
+
+@media only screen and (max-width: 1200px) {
+	.vehicle-sizes div  {
+		font-size: 20px;
 	}
 
 }
