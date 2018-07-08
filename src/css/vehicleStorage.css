@@ -625,6 +625,7 @@ section {
 	.vehicle-sizes {
 		flex-flow: row wrap;
 		width: 100%;
+		padding-bottom: 30px;
 
 	}
 	.vehicle-sizes  div {
@@ -696,7 +697,7 @@ section {
 		margin-bottom: 0px
 	}
 	#flex-words h1 {
-		font-size: 60px;
+		font-size: 30px;
 	}
 	#flex-words p {
 		font-size: 15px;

@@ -62,7 +62,7 @@ function vehicleFn(event){
 		$(`#vs3`).addClass("non-applicable");
 		$(`#vs4`).addClass("non-applicable");
 		$(`#vs5`).addClass("non-applicable");
-		$(`.vd-type`).html("Storing Two Automobiles");
+		$(`.vd-type`).html("Two Automobile Storage");
 		$(`.vd-description`).html("The height restriction on all units excluding 15x45+ is 10'.")
 	 }
 
