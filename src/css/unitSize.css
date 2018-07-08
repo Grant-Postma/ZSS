@@ -435,12 +435,21 @@ section {
 	#right {
 		float: none;
 	}
+	
+
 }
 @media only screen and (min-width: 1050px) {
 
 	#info {
 		margin: 70px;
 	}
+	.fas {
+		font-size:25px;
+	}
+	.vehicle-descriptions div {
+		background-color: red;
+	}
+
 
 } 
 

@@ -347,6 +347,17 @@ section {
 	height: 100%;
 	opacity: .1;
 	background-color: grey;
+    transition: opacity 500ms, transform 1000ms;
+    transition-timing-function: cubic-bezier(.19,1.32,.5,1);
+}
+
+.applicable {
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	background-color: grey;
+    transition: opacity 500ms, transform 1000ms;
+    transition-timing-function: cubic-bezier(.19,1.32,.5,1);
 }
  /* reviews + contact for each page  */
 
@@ -634,6 +645,19 @@ section {
 		margin: 1%;
 
 	}
+	.vehicle-options div {
+		min-width: 50px;
+	}
+
+	.vehicle-options div i {
+		font-size: 40px !important;
+	}
+
+	.vehicle-options div img {
+		height: 60px;
+		width: 90px;
+	}
+
 
 	.active {
 		border-top-left-radius: 10px  !important; 
@@ -645,6 +669,14 @@ section {
 	.vehicle-sizes  {
 		border-left: none;
 	}
+
+	.fas {
+		font-size:25px;
+	}
+	.vehicle-sizes div  {
+		font-size: 20px;
+	}
+
 }
 
 @media only screen and (min-width: 1000px) {

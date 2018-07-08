@@ -41,9 +41,21 @@ function vehicleFn(event){
 	 $('.vehicle-options div').removeClass("active");
 	 $(`#${tab}`).addClass("active");
 	 $('.vehicle-sizes div').removeClass("non-applicable");
+	 $('.vehicle-sizes div').removeClass("applicable");
 
 	 if(tab == 1 ){
-		$(`#vs1`).addClass("non-applicable"); 
+		$(`#vs1`).addClass("non-applicable");
+		$(`#vs2`).addClass("applicable");
+		$(`#vs3`).addClass("applicable");
+		$(`#vs4`).addClass("applicable");
+		$(`#vs5`).addClass("applicable");
+		$(`#vs6`).addClass("applicable");
+		$(`#vs7`).addClass("applicable");
+		$(`#vs8`).addClass("applicable");
+		$(`#vs9`).addClass("applicable");
+		$(`#vs10`).addClass("applicable");
+		$(`#vs11`).addClass("applicable");
+		 
 		$(`.vd-type`).html("Motorcycle Storage");
 		$(`.vd-description`).html("All sizes of motorcycle will fit in 10x10+. Some smaller motorcycles may fit in a 5x5")
 	 }
@@ -52,6 +64,14 @@ function vehicleFn(event){
 		$(`#vs1`).addClass("non-applicable"); 
 		$(`#vs2`).addClass("non-applicable");
 		$(`#vs3`).addClass("non-applicable");
+		$(`#vs4`).addClass("applicable");
+		$(`#vs5`).addClass("applicable");
+		$(`#vs6`).addClass("applicable");
+		$(`#vs7`).addClass("applicable");
+		$(`#vs8`).addClass("applicable");
+		$(`#vs9`).addClass("applicable");
+		$(`#vs10`).addClass("applicable");
+		$(`#vs11`).addClass("applicable");
 		$(`.vd-type`).html("Automobile Storage");
 		$(`.vd-description`).html("The height restriction on all units excluding 15x45+ is 10'.")
 	 }
@@ -62,6 +82,12 @@ function vehicleFn(event){
 		$(`#vs3`).addClass("non-applicable");
 		$(`#vs4`).addClass("non-applicable");
 		$(`#vs5`).addClass("non-applicable");
+		$(`#vs6`).addClass("applicable");
+		$(`#vs7`).addClass("applicable");
+		$(`#vs8`).addClass("applicable");
+		$(`#vs9`).addClass("applicable");
+		$(`#vs10`).addClass("applicable");
+		$(`#vs11`).addClass("applicable");
 		$(`.vd-type`).html("Two Automobile Storage");
 		$(`.vd-description`).html("The height restriction on all units excluding 15x45+ is 10'.")
 	 }
@@ -76,6 +102,8 @@ function vehicleFn(event){
 		$(`#vs7`).addClass("non-applicable");
 		$(`#vs8`).addClass("non-applicable");
 		$(`#vs9`).addClass("non-applicable");
+		$(`#vs10`).addClass("applicable");
+		$(`#vs11`).addClass("applicable");
 		$(`.vd-type`).html("Boat Storage");
 		$(`.vd-description`).html("These Units Range wildly in size so they should be able to fit boats of all sizes. These units are limited in number.")
 	 }
