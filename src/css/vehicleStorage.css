@@ -44,6 +44,32 @@ span a {
 	top: 25px;
 }
 
+#flex-words {
+	width: 50% !important;
+	margin-bottom: 50px;
+
+}
+
+
+#flex-words h1 {
+	opacity: 0;
+	transition: opacity 500ms;
+	font-size: 40px;
+}
+
+
+#flex-words p {
+	color: #fff;
+    font-size: 30px;
+    line-height: 1.5em;
+    font-weight: 200;
+	text-align: center;
+	opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 800ms, transform 800ms;
+    transition-timing-function: cubic-bezier(.19,1.32,.5,1);
+}
+
 .orange:hover {
 	color: #ffaa21 !important;
 }
@@ -68,6 +94,7 @@ section {
 	flex-flow: column nowrap;
 	justify-content: center;
 	align-items: center;
+	text-align: center;
 	color: white;
 	text-align: center;
 	width: 100%;
@@ -79,10 +106,7 @@ section {
 }
 
 
-#flex-words {
-	width: 85%;
-	margin-bottom: 50px;
-}
+
 
 .active {
 	display: flex !important;
@@ -307,7 +331,7 @@ section {
 	 border-left: solid 3px #666666;
  }
 
- .vehicle-sizes  div{
+ .vehicle-sizes  div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -586,6 +610,52 @@ section {
 	#review-img {
 		display: none;
 	}
+	.vehicle-box {
+		flex-flow: column nowrap;
+		width: 90%;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+	.vehicle-options {
+		flex-flow: row nowrap;
+		width: 100%;
+	}
+	.vehicle-descriptions{
+		flex-flow: column nowrap;
+		width: 100%;
+	}
+	.vehicle-descriptions div {
+		width: 100%;
+	 }
+	 .vd-box {
+		 flex-flow: column nowrap;
+	 }
+	 .vd-box h2{
+		margin-top: 30px;
+	}
+
+	.vehicle-sizes {
+		flex-flow: row wrap;
+		width: 100%;
+
+	}
+	.vehicle-sizes  div {
+		width: 20%;
+		height: 100px;
+		margin: 1%;
+
+	}
+
+	.active {
+		border-top-left-radius: 10px  !important; 
+		border-bottom-left-radius: 0px  !important;
+		border-top-right-radius: 10px  !important;
+		background-color: #cccccc  !important;
+	}
+
+	.vehicle-sizes  {
+		border-left: none;
+	}
 }
 
 @media only screen and (min-width: 1000px) {
@@ -604,7 +674,7 @@ section {
     	line-height: 50px;
     	font-size: 19px;
     	color: #666;
-    }
+	}
 }
 
 @media only screen and (min-width: 1050px) {
@@ -641,7 +711,7 @@ section {
 		margin-bottom: 0px
 	}
 	#flex-words h1 {
-		font-size: 30px;
+		font-size: 60px;
 	}
 	#flex-words p {
 		font-size: 15px;
