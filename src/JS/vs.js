@@ -101,7 +101,7 @@ function vehicleFn(event) {
 		$(`#vs9`).addClass("non-applicable");
 		$(`#vs10`).addClass("applicable");
 		$(`#vs11`).addClass("applicable");
-		$(`.vd-type`).html("Bus Storage");
+		$(`.vd-type`).html("Motorhome Storage");
 		$(`.vd-description`).html("Due to the height restriction all large vehicles will require maximum size units.")
 	}
 
