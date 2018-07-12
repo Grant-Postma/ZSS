@@ -465,6 +465,7 @@ section {
 	border: 1px solid black;
 	border-radius: 5px;
 	position: absolute;
+	cursor: pointer;
 	top: 15px;
 	right: 15px;
 	z-index: 101;
@@ -475,10 +476,11 @@ section {
 	font-weight: bold;
 	margin: 10px;
 	margin-bottom: 20px;
+	font-size: 22px;
 }
 
 #X:hover {
-	font-size: 20px;
+	font-size: 23px;
 	color: red;
 	cursor: pointer;
 }
