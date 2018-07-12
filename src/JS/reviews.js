@@ -59,7 +59,7 @@ function off() {
 
 
 setTimeout(function () {
-	$('#talkP, #letsTalk, #flex-words p, .box1, #flex-words h1, #flex-words h2').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
+	$('#talkP, #letsTalk, #flex-words p, .box1, #flex-words h1, #flex-words h2, #flex-words h3, #flex-words h4').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
 	$('#color').css({ 'transform': 'translateY(0px)' })
 }, 0);
 
