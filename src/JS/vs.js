@@ -86,7 +86,7 @@ function vehicleFn(event) {
 		$(`#vs10`).addClass("applicable");
 		$(`#vs11`).addClass("applicable");
 		$(`.vd-type`).html("Automobile Storage");
-		$(`.vd-description`).html("The height restriction on all units excluding 15x45+ is 10'.")
+		$(`.vd-description`).html("Most automobiles will fit in 10x20+ units, Some smaller cars may fit in 10x15.")
 	}
 
 	if (tab == 3) {
@@ -95,14 +95,14 @@ function vehicleFn(event) {
 		$(`#vs3`).addClass("non-applicable");
 		$(`#vs4`).addClass("non-applicable");
 		$(`#vs5`).addClass("non-applicable");
-		$(`#vs6`).addClass("applicable");
-		$(`#vs7`).addClass("applicable");
-		$(`#vs8`).addClass("applicable");
-		$(`#vs9`).addClass("applicable");
+		$(`#vs6`).addClass("non-applicable");
+		$(`#vs7`).addClass("non-applicable");
+		$(`#vs8`).addClass("non-applicable");
+		$(`#vs9`).addClass("non-applicable");
 		$(`#vs10`).addClass("applicable");
 		$(`#vs11`).addClass("applicable");
-		$(`.vd-type`).html("Two Automobile Storage");
-		$(`.vd-description`).html("The height restriction on all units excluding 15x45+ is 10'.")
+		$(`.vd-type`).html("Bus Storage");
+		$(`.vd-description`).html("Due to the height restriction all large vehicles will require maximum size units.")
 	}
 
 	if (tab == 4) {
@@ -122,7 +122,6 @@ function vehicleFn(event) {
 	}
 }
 
-console.log("fsdfasdf");
 const vehicleTabs = document.querySelectorAll('.vehicle-options div');
 console.log(vehicleTabs);
 vehicleTabs.forEach(type => type.addEventListener('click', vehicleFn));
