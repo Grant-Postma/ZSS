@@ -16,11 +16,11 @@ setInterval(function(){
 var inputSummoner = document.getElementById("dInput");
 
 var url_string = window.location.href;
+//console.log(`1st url ${url_string}`)
 var url = new URL(url_string);
 var input= {};
 input.path = [{}];
 input.path[0].id = url.searchParams.get("size");
-console.log(input.path[0].id);
 if(input.path[0].id) changeStuff(input);
 
 inputSummoner.addEventListener("keyup", function (event) {
@@ -82,7 +82,7 @@ setTimeout(function () {
 }, 400);
 
 setTimeout(function () {
-	$('.contact-dividor').css({ 'opacity': '1' })
+	$('.contact-dividor').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
 }, 500);
 
 
