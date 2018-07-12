@@ -93,6 +93,10 @@ section {
 	background-color: #888888;
 }
 
+.overhead {
+	font-size: 19px;
+}
+
 #dInput {
 	width: 500px;
 	height: 40px;
