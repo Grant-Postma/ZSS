@@ -323,8 +323,8 @@ section {
 	overflow: hidden;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 	border-radius: 10px;
-	transform: translateX(-175%);
-	transition: opacity 500ms, transform 1500ms;
+	transform: translateX(-125%);
+	transition: opacity 1500ms, transform 1500ms;
 	transition-timing-function: cubic-bezier(.19,1.32,.5,1);
  }
 
@@ -486,6 +486,7 @@ section {
 	border: 1px solid black;
 	border-radius: 5px;
 	position: absolute;
+	cursor: pointer;
 	top: 15px;
 	right: 25px;
 	z-index: 101;
@@ -523,10 +524,11 @@ section {
 	font-weight: bold;
 	margin: 10px;
 	margin-bottom: 20px;
+	font-size: 22px;
 }
 
 #X:hover {
-	font-size: 20px;
+	font-size: 23px;
 	color: red;
 	cursor: pointer;
 }
