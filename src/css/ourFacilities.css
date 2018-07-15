@@ -138,17 +138,17 @@ section {
  }
 
  #one {
- 	background-image: url("../Images/security.jpg");
+ 	background-image: url("../Images/lock.jpg");
  	background-size: cover;
  	background-position: center;
  }
  #two {
- 	background-image: url("../Images/convienence.jpg");
+ 	background-image: url("../Images/customer.jpg");
  	background-size: cover;
  	background-position: center;
  }
  #three {
- 	background-image: url("../Images/focus2.png");
+ 	background-image: url("../Images/realCustomer.jpg");
  	background-size: cover;
  	background-position: center;
  }
