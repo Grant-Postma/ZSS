@@ -31,8 +31,8 @@ setTimeout(function () {
 }, 300);
 
 setTimeout(function () {
-	$('.vehicle-box, #contact').css({ 'opacity': '1', 'transform': 'translateY(0px)' })
-}, 100);
+	$('.vehicle-box, #contact').css({ 'opacity': '1'})
+}, 0);
 
 
 //home page unti sizin
