@@ -1,1 +1,0 @@
-document.getElementById("two").innerHTML = "try me pssi boy";
