@@ -349,7 +349,8 @@ section {
 
  .vehicle-options div:hover {
  	background-color: #9A7DD5;
- 	border-radius: 10px;
+	 border-top-left-radius: 10px 10px;
+	 border-bottom-left-radius: 10px 10px;
  }
 
 
