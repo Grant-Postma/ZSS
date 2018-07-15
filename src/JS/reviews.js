@@ -75,7 +75,7 @@ setTimeout(function () {
 
 
 setTimeout(function () {
-	$(' #find-us, .pure-group, .text-align, #flex-words a, .pure-button').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
+	$(' #find-us, .pure-group, .text-align, #flex-words a, .corner-left, .pure-button').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
 }, 300);
 //home page unti sizing
 
