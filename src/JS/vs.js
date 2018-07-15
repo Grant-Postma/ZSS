@@ -21,13 +21,13 @@ function off() {
 
 
 setTimeout(function () {
-	$('#talkP, #letsTalk, #flex-words p, .box1, #flex-words h1, #flex-words h2').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
+	$('#talkP, #letsTalk, #flex-words p, .box1, #flex-words h1, #flex-words a, #flex-words h2').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
 	$('#color').css({ 'transform': 'translateY(0px)' })
 }, 0);
 
 
 setTimeout(function () {
-	$(' #find-us, form, .text-align, #flex-words a').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
+	$(' #find-us, form, .text-align').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
 }, 300);
 
 setTimeout(function () {
