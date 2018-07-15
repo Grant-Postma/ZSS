@@ -13,6 +13,16 @@ setInterval(function(){
 }, 5000);
 
 */
+
+	
+	var one = document.getElementById("one").innerHTML = "fuck off"
+
+
+
+
+
+
+
 var inputSummoner = document.getElementById("dInput");
 
 var url_string = window.location.href;
