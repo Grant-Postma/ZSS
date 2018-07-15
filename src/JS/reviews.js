@@ -15,7 +15,7 @@ setInterval(function(){
 */
 
 	
-	var one = document.getElementById("one").innerHTML = "fuck off"
+
 
 
 
