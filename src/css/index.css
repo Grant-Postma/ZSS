@@ -336,6 +336,7 @@ section {
     padding: 11px 25px;
     text-align: center;
     text-decoration: none;
+    border: 2px outset;
 	display: inline-block;
 	border-radius: 4px;
 	opacity: 0;
@@ -346,6 +347,7 @@ section {
 #flex-words a:hover {
 	background-color: white;
     color: grey;
+    border: 2px inset;
 }
 
 .box-container {
