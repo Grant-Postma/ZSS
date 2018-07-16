@@ -221,6 +221,7 @@ section {
  	width: 100%;
  	background-color: #333333;
  	border: 1px solid #333333;
+ 	font-size: 14px;
  }
 
 .contact-dividor {
@@ -322,7 +323,7 @@ section {
 	opacity: 1;
     transform: translateY(50px);
     transition: opacity 500ms, transform 1000ms;
-	color: #AAAAAA;
+	color: rgb(220,220,220);;
 }
 
 
@@ -341,7 +342,7 @@ section {
 	border-radius: 4px;
 	opacity: 0;
     transform: translateY(20px);
-    transition: opacity 500ms, transform 400ms;
+    transition: opacity 500ms, transform 400ms, background-color 300ms, color 300ms;
 }
 
 #flex-words a:hover {
