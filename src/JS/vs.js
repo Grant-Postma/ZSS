@@ -132,6 +132,6 @@ function expand() {
 
 function dbg(){
 	console.log('dbg')
-	var dbg = document.getElementById("dbg");
+	var dbg = document.getElementById("realdbg");
 	dbg.innerHTML = '<img src="Images/dbg.png" alt="Smiley face" height="100px" width="150px">'
 }
