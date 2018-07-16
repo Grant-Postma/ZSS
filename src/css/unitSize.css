@@ -343,10 +343,19 @@ section {
 	background-color: silver;
 }
 
-#arrow {
-	position: relative;
+.arrow {
+	position: absolute;
 	margin-right: 15px;
-	float: right;
+	top:12px;
+	right: 10px;
+}
+
+.menu {
+	position: absolute;
+	margin-right: 15px;
+	top: 8px;
+	right: 30px;
+	
 }
 
 .mobileButton {
