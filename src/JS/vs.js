@@ -130,3 +130,8 @@ function expand() {
 	$('#sizeHead').toggle();
 }
 
+function dbg(){
+	console.log('dbg')
+	var dbg = document.getElementById("dbg");
+	dbg.innerHTML = '<img src="Images/dbg.png" alt="Smiley face" height="100px" width="150px">'
+}
