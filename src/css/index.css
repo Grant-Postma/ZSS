@@ -371,7 +371,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 60%;
+  max-width: 50%;
   position: relative;
   margin: auto;
 }
@@ -703,7 +703,12 @@ img {vertical-align: middle;}
 	}
 	#slideyBoy {
 		background-image: none;
-		padding: none;
+		padding: 0px;
+		
+	}
+	.slideshow-container {
+		width: 100%;
+		max-width: 2000%;
 	}
 }
 
