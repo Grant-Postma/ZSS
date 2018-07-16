@@ -97,8 +97,8 @@ function vehicleFn(event) {
 		$(`#vs5`).addClass("non-applicable");
 		$(`#vs6`).addClass("non-applicable");
 		$(`#vs7`).addClass("non-applicable");
-		$(`#vs8`).addClass("non-applicable");
-		$(`#vs9`).addClass("non-applicable");
+		$(`#vs8`).addClass("applicable");
+		$(`#vs9`).addClass("applicable");
 		$(`#vs10`).addClass("applicable");
 		$(`#vs11`).addClass("applicable");
 		$(`.vd-type`).html("Motorhome Storage");
@@ -111,10 +111,10 @@ function vehicleFn(event) {
 		$(`#vs3`).addClass("non-applicable");
 		$(`#vs4`).addClass("non-applicable");
 		$(`#vs5`).addClass("non-applicable");
-		$(`#vs6`).addClass("non-applicable");
-		$(`#vs7`).addClass("non-applicable");
-		$(`#vs8`).addClass("non-applicable");
-		$(`#vs9`).addClass("non-applicable");
+		$(`#vs6`).addClass("applicable");
+		$(`#vs7`).addClass("applicable");
+		$(`#vs8`).addClass("applicable");
+		$(`#vs9`).addClass("applicable");
 		$(`#vs10`).addClass("applicable");
 		$(`#vs11`).addClass("applicable");
 		$(`.vd-type`).html("Boat Storage");
