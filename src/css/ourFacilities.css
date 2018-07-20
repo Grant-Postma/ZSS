@@ -35,6 +35,16 @@ body {
 
 }
 
+.dbg {
+	display: none;
+	position: fixed;
+	width: 100vw;
+	height: 80vh;
+	z-index: 9000;
+	background-image: url("../Images/dbg.png");
+ 	background-size: contain;
+ 	background-position: center;
+}
 #right {
 	float: right;
 }
@@ -139,7 +149,7 @@ section {
  }
 
  #one {
- 	background-image: url("../Images/lock.jpg");
+ 	background-image: url("../Images/lock-min.jpg");
  	background-size: cover;
  	background-position: center;
  }
@@ -149,7 +159,7 @@ section {
  	background-position: center;
  }
  #three {
- 	background-image: url("../Images/realCustomer.jpg");
+ 	background-image: url("../Images/realCustomer-min.jpg");
  	background-size: cover;
  	background-position: center;
  }

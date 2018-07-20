@@ -39,6 +39,16 @@ body {
 	float: right;
 }
 
+.dbg {
+	display: none;
+	position: fixed;
+	width: 100vw;
+	height: 80vh;
+	z-index: 9000;
+	background-image: url("../Images/dbg.png");
+ 	background-size: contain;
+ 	background-position: center;
+}
 
 span a {
 	padding: 20px;

@@ -32,6 +32,17 @@ body {
 	z-index: 99;
 }
 
+.dbg {
+	display: none;
+	position: fixed;
+	width: 100vw;
+	height: 80vh;
+	z-index: 9000;
+	background-image: url("../Images/dbg.png");
+ 	background-size: contain;
+ 	background-position: center;
+}
+
 #logo {
 	padding: 10px;
 

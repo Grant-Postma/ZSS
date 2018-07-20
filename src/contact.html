@@ -12,6 +12,7 @@
   
 </head>
 	<body>
+		<div class="dbg"></div>
 		<div id="menushow">
 			<span id="X" onclick="off()">&#10008;</span>
 			<a style="text-decoration: none;"href="index.html"><div class="red">Home</div></a>
@@ -123,27 +124,12 @@
 		</section>
 		
 	<script src="js/reviews.js"></script>
-	<script>
-function initMap() {
-  // The location of Uluru
-  var uluru = {lat: 42.817454, lng: -86.011161};
-  // The map, centered at Uluru
-  var map = new google.maps.Map(
-      document.getElementById('map'), {zoom: 13, center: uluru});
-  // The marker, positioned at Uluru
-  var marker = new google.maps.Marker({position: uluru, map: map});
-}
-    </script>
-    <!--Load the API from the specified URL
-    * The async attribute allows the browser to render the page while the API loads
-    * The key parameter will contain your own API key (which is not needed for this tutorial)
-    * The callback parameter executes the initMap() function
-    -->
+	
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChqZWCFqaFTVVOMd2ads09uETF0MK4RSY&callback=initMap">
     </script>
     <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
-
+    <script type="text/javascript" src="js/dbg.js"></script>
 </body>
 
 
