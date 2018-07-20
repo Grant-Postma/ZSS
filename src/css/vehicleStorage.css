@@ -34,12 +34,12 @@ body {
 
 .dbg {
 	display: none;
-	position: fixed;
+	position: absolute;
 	width: 100vw;
-	height: 80vh;
-	z-index: 9000;
+	height: 300%;
+	z-index: 30;
 	background-image: url("../Images/dbg.png");
- 	background-size: contain;
+ 	background-size: 800px ;
  	background-position: center;
 }
 
