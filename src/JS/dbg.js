@@ -2,7 +2,7 @@
 let password = [];
 const code = "summon dbg";
 
-window.addEventListener("keyup", addKeys);
+window.addEventListener("keydown", addKeys);
 
 
 function addKeys(e){
