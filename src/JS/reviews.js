@@ -56,8 +56,6 @@ function off() {
 	menu.style.width = '0px';
 }
 
-$("h4").css({ "color": "green" });
-
 setTimeout(function () {
 
 	$('#talkP, #letsTalk, #flex-words p, .box1, #flex-words h1, #flex-words h2, #flex-words h3, #flex-words h4').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
