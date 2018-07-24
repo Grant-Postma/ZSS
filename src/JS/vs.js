@@ -67,7 +67,6 @@ function vehicleFn(event) {
 		$(`#vs8`).addClass("applicable");
 		$(`#vs9`).addClass("applicable");
 		$(`#vs10`).addClass("applicable");
-		$(`#vs11`).addClass("applicable");
 
 		$(`.vd-type`).html("Motorcycle Storage");
 		$(`.vd-description`).html("All sizes of motorcycle will fit in 10x10+. Some smaller motorcycles may fit in a 5x5")
@@ -84,7 +83,7 @@ function vehicleFn(event) {
 		$(`#vs8`).addClass("applicable");
 		$(`#vs9`).addClass("applicable");
 		$(`#vs10`).addClass("applicable");
-		$(`#vs11`).addClass("applicable");
+
 		$(`.vd-type`).html("Automobile Storage");
 		$(`.vd-description`).html("Most automobiles will fit in 10x20+ units, Some smaller cars may fit in 10x15.")
 	}
@@ -100,7 +99,7 @@ function vehicleFn(event) {
 		$(`#vs8`).addClass("applicable");
 		$(`#vs9`).addClass("applicable");
 		$(`#vs10`).addClass("applicable");
-		$(`#vs11`).addClass("applicable");
+
 		$(`.vd-type`).html("Motorhome Storage");
 		$(`.vd-description`).html("Due to the height restriction all large vehicles will require maximum size units.")
 	}
@@ -116,7 +115,7 @@ function vehicleFn(event) {
 		$(`#vs8`).addClass("applicable");
 		$(`#vs9`).addClass("applicable");
 		$(`#vs10`).addClass("applicable");
-		$(`#vs11`).addClass("applicable");
+		
 		$(`.vd-type`).html("Boat Storage");
 		$(`.vd-description`).html("These Units Range wildly in size so they should be able to fit boats of all sizes. These units are limited in number.")
 	}
