@@ -1,17 +1,21 @@
+function msieversion() {
+
+	var ua = window.navigator.userAgent;
+	var msie = ua.indexOf("MSIE ");
+	
+	if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
+	{
+	alert("We do not support the use of internet explorer.  Please use any other browser. Link to chrome download here ---> https://www.google.com/chrome/");
+	}
+	
+	}
+	
+	msieversion() 
+	
+
+
 "use strict";
 
-/*
-setInterval(function(){
-	number++
-	var block = document.getElementById('changing');
-	block.classList.remove(`review5`);
-	block.classList.add(`review${number}`);
-	block.classList.remove(`review${number - 1}`);
-
-	if (number >= 5) number = 0;
-}, 5000);
-
-*/
 
 var inputSummoner = document.getElementById("dInput");
 
@@ -107,3 +111,4 @@ headNames.forEach(function (name) {
 function expand() {
 	$('#sizeHead').toggle();
 }
+

@@ -176,34 +176,7 @@
 			</div>
 
 		</section>
-		<script>
-		$('#color').css({ 'transform': 'translateY(0px)' })
-		function changeSstuff(event) {
-	var pageWidth = $(window).width();
-	var tab;
-	if (event.path) tab = event.path[0].id;else tab = event.currentTarget.id;
-	$(".sizeBody").removeClass("active");
-	$('#sizeHead div').removeClass("on");
-	$("#n" + tab).addClass("active");
-	$("#" + tab).addClass("on");
-	var size = document.getElementsByClassName('on')[0].innerHTML;
-	$('.dropbtn').html("Unit Sizes - " + size + " <span class=\"menu\">menu </span> <i class=\"arrow fas fa-angle-double-down\"></i>");
-	if (pageWidth < 768) {
-		$('#sizeHead').css('display', 'none');
-	}
-}
 
-function changeStuff(){
-	$("#g").css({"color": "red"});
-}
-
-var headNames = document.querySelectorAll('#sizeHead div');
-headNames.forEach(function (name) {
-	return name.addEventListener('click', function(){
-		console.log("hhtththth");
-	});
-});
-		</script>
 	<script src="js/reviews.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyChqZWCFqaFTVVOMd2ads09uETF0MK4RSY&callback=initMap">

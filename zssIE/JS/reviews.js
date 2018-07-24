@@ -99,10 +99,14 @@ function changeStuff(event) {
 	}
 }
 
-var headNames = document.querySelectorAll('#sizeHead div');
-headNames.forEach(function (name) {
-	return name.addEventListener('click', changeStuff);
-});
+
+
+var h = document.querySelectorAll('#sizeHeaddiv');
+for ( i = 0; i < h.length; i++) {
+ h[i].addEventListener('click', changeStuff);
+};
+
+
 
 function expand() {
 	$('#sizeHead').toggle();

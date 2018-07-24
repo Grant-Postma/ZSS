@@ -1,3 +1,18 @@
+function msieversion() {
+
+	var ua = window.navigator.userAgent;
+	var msie = ua.indexOf("MSIE ");
+	
+	if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
+	{
+	alert("We do not support the use of internet explorer.  Please use any other browser. Link to chrome download here ---> https://www.google.com/chrome/");
+	}
+	
+	}
+	
+	msieversion() 
+
+	
 
 
 function formSubmit() {
@@ -134,3 +149,6 @@ function dbg(){
 	var dbg = document.getElementsByClassName("realdbg");
 	dbg.innerHTML = '<img src="Images/dbg.png" alt="Smiley face" height="100px" width="150px">'
 }
+
+
+
