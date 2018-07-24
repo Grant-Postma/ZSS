@@ -59,12 +59,21 @@ function off() {
 $("h4").css({ "color": "green" });
 
 setTimeout(function () {
+<<<<<<< HEAD
 	$('#talkP, #letsTalk, #flex-words p, #flex-words a, .box1, #flex-words h1, #flex-words h2, #flex-words h3, #flex-words h4').css({ 'opacity': '1', 'transform': 'translateX(0px)' });
 	$('#color').css({ 'transform': 'translateY(0px)' });
+=======
+	$('#talkP, #letsTalk, #flex-words p, .box1, #flex-words h1, #flex-words h2, #flex-words h3, #flex-words h4').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
+	$('#color').css({ 'transform': 'translateY(0px)' })
+>>>>>>> parent of bd3fd12... .
 }, 0);
 
 setTimeout(function () {
+<<<<<<< HEAD
 	$(' #find-us, .pure-group, .text-align, .corner-left, .pure-button').css({ 'opacity': '1', 'transform': 'translateX(0px)' });
+=======
+	$(' #find-us, .pure-group, .text-align, #flex-words a, .corner-left, .pure-button').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
+>>>>>>> parent of bd3fd12... .
 }, 300);
 //home page unti sizing
 
