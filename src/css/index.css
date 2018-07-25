@@ -477,21 +477,7 @@ img {vertical-align: middle;}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .box-container {
-	height: 600px;
 	width: 100%;
 	display: flex;
 	flex-flow: row nowrap;
@@ -506,6 +492,7 @@ img {vertical-align: middle;}
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	margin-bottom: 1%;
 }
 
 
@@ -632,11 +619,10 @@ img {vertical-align: middle;}
 		flex-flow: column nowrap;
 	}
 	.info:nth-child(2)  {
-		margin-top: 50px;
+		margin-top: 0px;
 	}
-
 	.info:nth-child(3) {
-		margin-top: 50px;	
+		margin-top: 0px;	
 	}
 
 	#flex-words {
