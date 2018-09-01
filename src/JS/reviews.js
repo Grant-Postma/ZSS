@@ -94,19 +94,19 @@ setTimeout(function () {
 setTimeout(function () {
 	
 	changeStuff({path: [{"id": "a"}]});
-}, 600);
+}, 0);
 
 setTimeout(function () {
 	changeStuff({path: [{"id": "b"}]});
-}, 1000);
+}, 400);
 
 setTimeout(function () {
 	changeStuff({path: [{"id": "c"}]});
-}, 1400);
+}, 800);
 
 setTimeout(function () {
 	if (input.path[0].id) changeStuff(input); else changeStuff({path: [{"id": "a"}]});
-}, 1800);
+}, 1200);
 
 setTimeout(function () {
 	$('#unit1').css({ 'transform': 'translateY(0px)' });
