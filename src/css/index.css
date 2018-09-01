@@ -358,7 +358,7 @@ section {
 	font-size: 15px;
 	font-weight: 200;
 	margin-top: -50px;
-	opacity: 1;
+	opacity: 0;
     transform: translateY(50px);
     transition: opacity 500ms, transform 1000ms;
 	color: rgb(220,220,220);;

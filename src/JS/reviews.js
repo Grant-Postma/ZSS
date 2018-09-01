@@ -2,16 +2,16 @@ function msieversion() {
 
 	var ua = window.navigator.userAgent;
 	var msie = ua.indexOf("MSIE ");
-	
+
 	if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./))  // If Internet Explorer, return version number
 	{
-	alert("We do not support the use of internet explorer.  Please use any other browser. Link to chrome download here ---> https://www.google.com/chrome/");
+		alert("We do not support the use of internet explorer.  Please use any other browser. Link to chrome download here ---> https://www.google.com/chrome/");
 	}
-	
-	}
-	
-	msieversion() 
-	
+
+}
+
+msieversion()
+
 
 
 "use strict";
@@ -62,19 +62,19 @@ function off() {
 
 setTimeout(function () {
 
-	$('#talkP, #letsTalk, #flex-words p, .box1, #flex-words h1, #flex-words h2, #flex-words h3, #flex-words h4').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
+	$('#talkP, #letsTalk, #flex-words p, .box1, #flex-words h1, #flex-words h2').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
 	$('#color').css({ 'transform': 'translateY(0px)' })
 }, 0);
 
 setTimeout(function () {
 
-	$(' #find-us, .pure-group, .text-align, #flex-words a, .corner-left, .pure-button').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
-}, 300);
+	$(' #find-us, .pure-group, .text-align, #flex-words a, .corner-left, .pure-button, #flex-words h3, #flex-words h4').css({ 'opacity': '1', 'transform': 'translateX(0px)' })
+}, 250);
 //home page unti sizing
 
 setTimeout(function () {
 	$('#unit1').css({ 'transform': 'translateY(0px)' });
-	changeStuff({path: [{"id": "a"}]});
+	changeStuff({ path: [{ "id": "a" }] });
 }, 0);
 
 setTimeout(function () {
@@ -87,25 +87,25 @@ setTimeout(function () {
 
 setTimeout(function () {
 	$('.contact-dividor').css({ 'opacity': '1', 'transform': 'translateX(0px)' });
-	
+
 }, 500);
 
 
 setTimeout(function () {
-	
-	changeStuff({path: [{"id": "a"}]});
+
+	changeStuff({ path: [{ "id": "a" }] });
 }, 0);
 
 setTimeout(function () {
-	changeStuff({path: [{"id": "b"}]});
+	changeStuff({ path: [{ "id": "b" }] });
 }, 400);
 
 setTimeout(function () {
-	changeStuff({path: [{"id": "c"}]});
+	changeStuff({ path: [{ "id": "c" }] });
 }, 800);
 
 setTimeout(function () {
-	if (input.path[0].id) changeStuff(input); else changeStuff({path: [{"id": "a"}]});
+	if (input.path[0].id) changeStuff(input); else changeStuff({ path: [{ "id": "a" }] });
 }, 1200);
 
 setTimeout(function () {
@@ -115,7 +115,7 @@ setTimeout(function () {
 function changeStuff(event) {
 	var pageWidth = $(window).width();
 	var tab;
-	if (event.path) tab = event.path[0].id;else tab = event.currentTarget.id;
+	if (event.path) tab = event.path[0].id; else tab = event.currentTarget.id;
 	$(".sizeBody").removeClass("active");
 	$('#sizeHead div').removeClass("on");
 	$("#n" + tab).addClass("active");
