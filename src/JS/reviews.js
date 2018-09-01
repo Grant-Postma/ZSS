@@ -74,6 +74,7 @@ setTimeout(function () {
 
 setTimeout(function () {
 	$('#unit1').css({ 'transform': 'translateY(0px)' });
+	changeStuff({path: [{"id": "a"}]});
 }, 0);
 
 setTimeout(function () {
@@ -86,7 +87,30 @@ setTimeout(function () {
 
 setTimeout(function () {
 	$('.contact-dividor').css({ 'opacity': '1', 'transform': 'translateX(0px)' });
+	
 }, 500);
+
+
+setTimeout(function () {
+	
+	changeStuff({path: [{"id": "a"}]});
+}, 600);
+
+setTimeout(function () {
+	changeStuff({path: [{"id": "b"}]});
+}, 1000);
+
+setTimeout(function () {
+	changeStuff({path: [{"id": "c"}]});
+}, 1400);
+
+setTimeout(function () {
+	if (input.path[0].id) changeStuff(input); else changeStuff({path: [{"id": "a"}]});
+}, 1800);
+
+setTimeout(function () {
+	$('#unit1').css({ 'transform': 'translateY(0px)' });
+}, 0);
 
 function changeStuff(event) {
 	var pageWidth = $(window).width();
