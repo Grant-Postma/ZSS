@@ -72,18 +72,18 @@ setTimeout(function () {
 }, 250);
 //home page unti sizing
 
-setTimeout(function () {
-	$('#unit1').css({ 'transform': 'translateY(0px)' });
-	changeStuff({ path: [{ "id": "a" }] });
-}, 0);
+// setTimeout(function () {
+// 	$('#unit1').css({ 'transform': 'translateY(0px)' });
+// 	changeStuff({ path: [{ "id": "a" }] });
+// }, 0);
 
-setTimeout(function () {
-	$('#unit2').css({ 'transform': 'translateY(0px)' });
-}, 200);
+// setTimeout(function () {
+// 	$('#unit2').css({ 'transform': 'translateY(0px)' });
+// }, 200);
 
-setTimeout(function () {
-	$('#unit3').css({ 'transform': 'translateY(0px)' });
-}, 400);
+// setTimeout(function () {
+// 	$('#unit3').css({ 'transform': 'translateY(0px)' });
+// }, 400);
 
 setTimeout(function () {
 	$('.contact-dividor').css({ 'opacity': '1', 'transform': 'translateX(0px)' });
@@ -108,9 +108,9 @@ setTimeout(function () {
 	if (input.path[0].id) changeStuff(input); else changeStuff({ path: [{ "id": "a" }] });
 }, 1200);
 
-setTimeout(function () {
-	$('#unit1').css({ 'transform': 'translateY(0px)' });
-}, 0);
+// setTimeout(function () {
+// 	$('#unit1').css({ 'transform': 'translateY(0px)' });
+// }, 0);
 
 function changeStuff(event) {
 	var pageWidth = $(window).width();

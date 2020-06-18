@@ -25,7 +25,7 @@ body {
 
 #nav {
 	margin: auto;
-	width: 55%;
+	width: 80%;
 	min-width: 1000px;
 	z-index: 99;
 }
@@ -72,7 +72,12 @@ span a {
 .red:hover {
 	color: #db332f !important;
 }
-
+#blue:hover {
+	color: #1917a3;
+}
+#black:hover {
+	color: #000000;
+}
 
 section {
 	height: 200vh;
@@ -441,7 +446,7 @@ section {
 
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1400px) {
 	#info span {
 		margin:10px;
 		text-align: left;
