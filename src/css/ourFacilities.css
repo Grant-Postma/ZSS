@@ -51,10 +51,9 @@ body {
 }
 
 span a {
-	padding: 20px;
+	padding: 10px;
 	text-decoration: none;
 	color: gray;
-	padding: 22px;
 	font-size: 20px;
 	position: relative;
 	top: 25px;
