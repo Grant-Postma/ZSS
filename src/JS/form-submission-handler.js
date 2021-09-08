@@ -4,7 +4,9 @@
     return re.test(email);
   }
 
-  function validateHuman(honeypot) {
+  function validateHuman() {
+    var honeypot = document.getElementById("honeypot").value;
+    
     if (honeypot) {  //if hidden form filled up
       console.log("Robot Detected!");
       return true;
@@ -18,7 +20,9 @@
     var form = document.getElementById("gform");
     var elements = form.elements;
 
-    var fields = Object.keys(elements).map(function(k) {
+    var fields = Object.keys(elements).filter(function(k) {
+          return (elements[k].name !== "honeypot");
+    }).map(function(k) {
       if(elements[k].name !== undefined) {
         return elements[k].name;
       // special case for Edge's html collection
@@ -62,7 +66,7 @@
     event.preventDefault();           // we are submitting via xhr below
     var data = getFormData();         // get the values submitted in the form
 
-    if (validateHuman(data.honeypot)) {  //if form is filled, form will not be submitted
+    if (validateHuman()) {  //if form is filled, form will not be submitted
       return false;
     }
 
